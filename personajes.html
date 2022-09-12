@@ -42,15 +42,22 @@
 
 </head>
 
-<body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-02">
+<body class="site-layout--horizontal preloader-is--active">
 
 	<div class="site-wrapper">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--landing">
+		<header id="header" class="site-header site-header--bottom">
 
-			<!-- Main Navigation Left -->
+			<!-- Logo - Image Based -->
+			<div class="header-logo header-logo--img">
+				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="Necromancers"></a>
+			</div>
+			<!-- Logo - Image Based / End -->
+
+
+			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li class=""><a href="home.html">Home</a></li>
@@ -59,7 +66,7 @@
 						<ul class="main-nav__sub">
 							<li class="">
 								<a href="#">Team Selections</a>
-								<ul class="main-nav__sub">
+								<ul class="main-nav__sub main-nav__sub--dropup">
 									<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
 									<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
 									<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
@@ -108,43 +115,29 @@
 							<li class=""><a href="matches-replay.html">Match Replay</a></li>
 						</ul>
 					</li>
-				</ul>
-			</nav>
-			<!-- Main Navigation Left / End -->
-
-			<!-- Logo - Image Based -->
-			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="The Challenge Shot"></a>
-			</div>
-			<!-- Logo - Image Based / End -->
-
-			<!-- Main Navigation Right -->
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class=""><a href="#">News</a>
+					<li class="active"><a href="#">News</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="blog-1.html">News v1</a></li>
 							<li class=""><a href="blog-2.html">News v2</a></li>
 							<li class=""><a href="blog-3.html">News v3</a></li>
-							<li class=""><a href="blog-4.html">News v4</a></li>
+							<li class="active"><a href="blog-4.html">News v4</a></li>
 							<li class=""><a href="blog-classic.html">News Classic</a></li>
 							<li class=""><a href="blog-post.html">Post Page</a></li>
 						</ul>
 					</li>
-					<li class=" has-child"><a href="#">Features</a>
+					<li><a href="#">Features</a>
 						<div class="main-nav__megamenu">
 							<div class="row">
 								<div class="col-md-4">
 									<h6 class="main-nav__title">Main Pages</h6>
 									<div class="row">
 										<ul class="col-md-4">
-											<li class="active"><a href="index.html">Landing Image</a></li>
+											<li class=""><a href="index.html">Landing Image</a></li>
 											<li class=""><a href="index-2.html">Landing Video</a></li>
-											<li class=""><a href="blog-post.html">Post Page</a></li>
 											<li class=""><a href="blog-1.html">News v1</a></li>
 											<li class=""><a href="blog-2.html">News v2</a></li>
 											<li class=""><a href="blog-3.html">News v3</a></li>
-											<li class=""><a href="blog-4.html">News v4</a></li>
+											<li class="active"><a href="blog-4.html">News v4</a></li>
 											<li class=""><a href="blog-classic.html">News Classic</a></li>
 										</ul>
 										<ul class="col-md-4">
@@ -152,7 +145,7 @@
 											<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
 											<li class=""><a href="login-register.html">Login & Register</a></li>
 											<li class=""><a href="features-about-us.html">About Us</a></li>
-											<li class=""><a href="management-and-staff.html">Staff Page</a></li>
+											<li class=""><a href="management-and-staff.html">Staff</a></li>
 											<li class=""><a href="staff-member.html">Staff Member<span
 														class="badge badge-danger">New</span></a></li>
 											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
@@ -164,7 +157,7 @@
 											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
 											<li class=""><a href="features-typography.html">Typography</a></li>
 											<li class=""><a href="features-icons.html">Icons</a></li>
-											<li class=""><a href="features-404.html">404 Error <span
+											<li class=""><a href="features-404.html">404 Error<span
 														class="badge badge-danger">New</span></a></li>
 											<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
 										</ul>
@@ -181,8 +174,8 @@
 											<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
 											<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
 											<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
-											<li><a href="team-overview.html">Team Overview v1</a></li>
-											<li><a href="team-overview-2.html">Team Overview v2</a></li>
+											<li class=""><a href="team-overview.html">Team Overview v1</a></li>
+											<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
 										</ul>
 										<ul class="col-md-4">
 											<li><a href="team-overview.html?slide=1">Team Statistics</a></li>
@@ -242,74 +235,415 @@
 					</li>
 				</ul>
 			</nav>
-			<!-- Main Navigation Right / End -->
+			<!-- Main Navigation / End -->
+
+			<!-- Header Actions -->
+			<div class="header-actions">
+				<div class="header-pagination">
+					<a href="#" class="header-scroll-arrow header-scroll-arrow--left">
+						<svg role="img" class="df-icon df-icon--left-arrow">
+							<use xlink:href="assets/img/necromancers.svg#left-arrow" />
+						</svg>
+					</a>
+					<ol class="header-pagination--list">
+						<li><a href="#">01</a></li>
+						<li><a href="#">02</a></li>
+						<li><span>...</span></li>
+						<li><a href="#">08</a></li>
+					</ol>
+					<a href="#" class="header-scroll-arrow header-scroll-arrow--right">
+						<svg role="img" class="df-icon df-icon--right-arrow">
+							<use xlink:href="assets/img/necromancers.svg#right-arrow" />
+						</svg>
+					</a>
+				</div>
+				<div class="header-filter-toggle">
+					<svg role="img" class="df-icon df-icon--filter">
+						<use xlink:href="assets/img/necromancers.svg#filter" />
+					</svg>
+					<div class="filter-menu">
+						<form action="#" class="filter-menu__form">
+							<div class="filter-menu__select">
+								<label class="filter-menu__label">Category</label>
+								<select class="cs-select">
+									<option value="" selected>All Categories</option>
+									<option value="">Esports</option>
+									<option value="">Gaming</option>
+									<option value="">Videos</option>
+								</select>
+							</div>
+							<div class="filter-menu__select">
+								<label class="filter-menu__label">Filter By</label>
+								<select class="cs-select">
+									<option value="" selected>Article Date</option>
+									<option value="">Comments</option>
+									<option value="">Popularity</option>
+								</select>
+							</div>
+							<div class="filter-menu__select">
+								<label class="filter-menu__label">Order</label>
+								<select class="cs-select">
+									<option value="" selected>Ascending</option>
+									<option value="">Descending</option>
+								</select>
+							</div>
+							<div class="filter-menu__submit">
+								<button type="submit" class="btn btn-primary btn-sm btn-block">Filter News</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="header-top-bar-toggle d-md-none hide">
+					<svg role="img" class="df-icon df-icon--joystick">
+						<use xlink:href="assets/img/necromancers.svg#joystick" />
+					</svg>
+					<svg role="img" class="df-icon df-icon--close">
+						<use xlink:href="assets/img/necromancers.svg#close" />
+					</svg>
+				</div>
+				<div class="header-social-toggle d-none d-md-block">
+					<svg role="img" class="df-icon df-icon--thumb-up">
+						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
+					</svg>
+					<span class="header-social-toggle__plus">&nbsp;</span>
+					<ul class="social-menu social-menu--header">
+						<li><a href="https://discord.gg/xxxx"><span class="link-subtitle">Discord</span>Necrochat</a>
+						</li>
+						<li><a href="https://twitch.tv/"><span class="link-subtitle">Twitch</span>Necroplay</a></li>
+						<li><a href="https://twitter.com/danfisher_dev"><span
+									class="link-subtitle">Twitter</span>Necrotwt</a></li>
+						<li><a href="https://www.facebook.com/danfisher.dev/"><span
+									class="link-subtitle">Facebook</span>Necrogame</a></li>
+					</ul>
+				</div>
+				<div class="header-cart-toggle">
+					<svg role="img" class="df-icon df-icon--bag">
+						<use xlink:href="assets/img/necromancers.svg#bag" />
+					</svg>
+					<svg role="img" class="df-icon df-icon--close">
+						<use xlink:href="assets/img/necromancers.svg#close" />
+					</svg>
+					<span class="header-cart-toggle__items-count">4</span>
+				</div>
+				<div class="header-search-toggle">
+					<svg role="img" class="df-icon df-icon--search">
+						<use xlink:href="assets/img/necromancers.svg#search" />
+					</svg>
+					<svg role="img" class="df-icon df-icon--search-close">
+						<use xlink:href="assets/img/necromancers.svg#search-close" />
+					</svg>
+				</div>
+				<div class="header-account hide">
+					<div class="header-account__avatar">
+						<img src="assets/img/samples/account-user-avatar.jpg"
+							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
+					</div>
+					<div class="header-account__body">
+						Hello!
+						<div class="header-account__name">James Spiegel</div>
+					</div>
+					<div class="header-account__icon">
+						<a href="shop-account-settings.html">
+							<svg role="img" class="df-icon df-icon--account">
+								<use xlink:href="assets/img/necromancers.svg#account" />
+							</svg>
+						</a>
+						<a href="login-register.html">
+							<svg role="img" class="df-icon df-icon--logout">
+								<use xlink:href="assets/img/necromancers.svg#logout" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="header-menu-toggle">
+					<div class="header-menu-toggle__inner">
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+					</div>
+				</div>
+			</div>
+			<!-- Header Actions / End -->
 		</header>
 		<!-- Header / End -->
 
 		<!-- Content
 		================================================== -->
-		<main class="site-content text-center" id="wrapper">
+		<main class="site-content" id="wrapper">
 
-			<div class="site-content__center">
-				<h1 class="text-white landing-title"><span class="subtitle landing-subtitle">the best shooting
-						game</span>The challenge shot</h1>
-				<a href="home.html" class="btn btn-primary btn-lg btn--landing"><span>Start Browsing!</span></a>
+			<div class="widget-area widger-area--before-loop">
+				<div class="widget widget-carousel slick-slider">
+					<article class="widget-carousel__item post slick-slide">
+						<div class="post__thumbnail">
+							<img src="assets/img/slider/57c6e51ad6125789bd4d8acae5e16c41.jpg" alt="">
+						</div>
+						<div class="post__body">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-primary">
+									<a href="#">The Challenge Shot</a>
+								</li>
+							</ul>
+							<h2 class="post__title"><a href="blog-post.html">Explore all the characters in the game
+								</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 29th, 2018</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="widget-carousel__item post slick-slide">
+						<div class="post__thumbnail">
+							<img src="assets/img/slider/3740212385bf0bba24cd6706cdca79a5.jpg" alt="">
+						</div>
+						<div class="post__body">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">The Challenge Shot</a>
+								</li>
+							</ul>
+							<h2 class="post__title"><a href="blog-post.html">Choose your favorite character and start
+									winning games</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 26th, 2018</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="widget-carousel__item post slick-slide">
+						<div class="post__thumbnail">
+							<img src="assets/img/slider/e0dae8cc81b10d8dbdc22293342db984.jpg" alt="">
+						</div>
+						<div class="post__body">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">The Challenge Shot</a>
+								</li>
+							</ul>
+							<h2 class="post__title"><a href="blog-post.html">The best shooting game for you</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">July 22nd, 2018</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+				</div>
 			</div>
+			<div class="content blog-layout--style-4">
 
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/48681d6d0bbe03c35de991c8567b2d1a.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Bounty Hunter</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">CHRONO</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/moco.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Hacker</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail2.html">MOCO</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/homer.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Blind Assassin</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">HOMER</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/maro.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Falconer</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">MARO</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/nairi.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Climate Change Researcher</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">Nairi</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/xayne.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Extreme Athlete</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">XAYNE</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/kenta.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">BladeSmith</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">KENTA</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail ">
+					<div class="post__thumbnail">
+						<img src="assets/img/personajes/port/estefi.jpg" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Grafitti Artist</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detail.html">STEFFI</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">August 15th, 2018</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
+							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
+							praesentium dolore cumque ab.
+						</div>
+					</div>
+				</article>
+
+
+
+
+
+
+
+
+			</div>
 		</main>
 
-		<!-- Footer
-		================================================== -->
-		<footer id="footer" class="footer text-center">
-			<ul class="social-menu social-menu--landing social-menu--landing-glitch">
-				<li>
-					<a href="https://www.facebook.com/danfisher.dev/" target="_blank">
-						<i class="fab fa-facebook-square"></i>
-						<span class="link-subtitle">Facebook</span>Necrogame
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/danfisher_dev" target="_blank">
-						<i class="fab fa-twitter"></i>
-						<span class="link-subtitle">Twitter</span>Necrotwt
-					</a>
-				</li>
-				<li>
-					<a href="https://twitch.tv" target="_blank">
-						<i class="fab fa-twitch"></i>
-						<span class="link-subtitle">Twitch</span>Necroplays
-					</a>
-				</li>
-				<li>
-					<a href="https://discordapp.com/" target="_blank">
-						<i class="fab fa-discord"></i>
-						<span class="link-subtitle">Discord</span>Necrochat
-					</a>
-				</li>
-			</ul>
-		</footer>
-		<!-- Footer / End -->
-
-		<div class="landing-detail landing-detail--left">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
-		<div class="landing-detail-cover landing-detail-cover--left">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
-		<div class="landing-detail landing-detail--right">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
-		<div class="landing-detail-cover landing-detail-cover--right">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
 		<!-- Overlay -->
 		<div class="site-overlay"></div>
 		<!-- Overlay / End -->
@@ -446,14 +780,14 @@
 								<li class="active">
 									<a href="#">Main Pages</a>
 									<ul class="mobile-nav__sub">
-										<li class="active"><a href="index.html">Landing Image</a></li>
+										<li class=""><a href="index.html">Landing Image</a></li>
 										<li class=""><a href="index-2.html">Landing Video</a></li>
 										<li class=""><a href="home.html">Home page</a></li>
 										<li class=""><a href="blog-post.html">Post Page</a></li>
 										<li class=""><a href="blog-1.html">News v1</a></li>
 										<li class=""><a href="blog-2.html">News v2</a></li>
 										<li class=""><a href="blog-3.html">News v3</a></li>
-										<li class=""><a href="blog-4.html">News v4</a></li>
+										<li class="active"><a href="blog-4.html">News v4</a></li>
 										<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
 										<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
 										<li class=""><a href="login-register.html">Login & Register</a></li>
@@ -1756,13 +2090,13 @@
 								<ul class="dl-submenu dl-megamenu">
 									<div class="row">
 										<ul class="col-md-6 col-lg-4">
-											<li class="active"><a href="index.html">Landing Image</a></li>
+											<li class=""><a href="index.html">Landing Image</a></li>
 											<li class=""><a href="index-2.html">Landing Video</a></li>
 											<li class=""><a href="home.html">Home page</a></li>
 											<li class=""><a href="blog-1.html">News v1</a></li>
 											<li class=""><a href="blog-2.html">News v2</a></li>
 											<li class=""><a href="blog-3.html">News v3</a></li>
-											<li class=""><a href="blog-4.html">News v4</a></li>
+											<li class="active"><a href="blog-4.html">News v4</a></li>
 											<li class=""><a href="blog-classic.html">News Classic</a></li>
 											<li class=""><a href="blog-post.html">Post Page</a></li>
 											<li class=""><a href="shop-account-settings.html">Account Settings</a></li>

@@ -42,15 +42,23 @@
 
 </head>
 
-<body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-02">
+<body class="site-layout--horizontal preloader-is--active">
 
 	<div class="site-wrapper">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--landing">
+		<header id="header" class="site-header site-header--bottom">
 
-			<!-- Main Navigation Left -->
+			<!-- Logo - Image Based -->
+			<div class="header-logo header-logo--img">
+				<a href="index.html"><img src="assets/img/logo.png" srcset="assets/img/logo@2x.png 2x"
+						alt="Necromancers"></a>
+			</div>
+			<!-- Logo - Image Based / End -->
+
+
+			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
 					<li class=""><a href="home.html">Home</a></li>
@@ -59,7 +67,7 @@
 						<ul class="main-nav__sub">
 							<li class="">
 								<a href="#">Team Selections</a>
-								<ul class="main-nav__sub">
+								<ul class="main-nav__sub main-nav__sub--dropup">
 									<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
 									<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
 									<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
@@ -108,19 +116,6 @@
 							<li class=""><a href="matches-replay.html">Match Replay</a></li>
 						</ul>
 					</li>
-				</ul>
-			</nav>
-			<!-- Main Navigation Left / End -->
-
-			<!-- Logo - Image Based -->
-			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="The Challenge Shot"></a>
-			</div>
-			<!-- Logo - Image Based / End -->
-
-			<!-- Main Navigation Right -->
-			<nav class="main-nav">
-				<ul class="main-nav__list">
 					<li class=""><a href="#">News</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="blog-1.html">News v1</a></li>
@@ -131,16 +126,15 @@
 							<li class=""><a href="blog-post.html">Post Page</a></li>
 						</ul>
 					</li>
-					<li class=" has-child"><a href="#">Features</a>
+					<li><a href="#">Features</a>
 						<div class="main-nav__megamenu">
 							<div class="row">
 								<div class="col-md-4">
 									<h6 class="main-nav__title">Main Pages</h6>
 									<div class="row">
 										<ul class="col-md-4">
-											<li class="active"><a href="index.html">Landing Image</a></li>
+											<li class=""><a href="index.html">Landing Image</a></li>
 											<li class=""><a href="index-2.html">Landing Video</a></li>
-											<li class=""><a href="blog-post.html">Post Page</a></li>
 											<li class=""><a href="blog-1.html">News v1</a></li>
 											<li class=""><a href="blog-2.html">News v2</a></li>
 											<li class=""><a href="blog-3.html">News v3</a></li>
@@ -152,19 +146,19 @@
 											<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
 											<li class=""><a href="login-register.html">Login & Register</a></li>
 											<li class=""><a href="features-about-us.html">About Us</a></li>
-											<li class=""><a href="management-and-staff.html">Staff Page</a></li>
+											<li class=""><a href="management-and-staff.html">Staff</a></li>
 											<li class=""><a href="staff-member.html">Staff Member<span
 														class="badge badge-danger">New</span></a></li>
 											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
 											<li class=""><a href="features-faqs.html">FAQs</a></li>
 										</ul>
 										<ul class="col-md-4">
-											<li class=""><a href="streams-archive.html">Streams Page</a></li>
+											<li class="active"><a href="streams-archive.html">Streams Page</a></li>
 											<li class=""><a href="partners.html">Our Partners</a></li>
 											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
 											<li class=""><a href="features-typography.html">Typography</a></li>
 											<li class=""><a href="features-icons.html">Icons</a></li>
-											<li class=""><a href="features-404.html">404 Error <span
+											<li class=""><a href="features-404.html">404 Error<span
 														class="badge badge-danger">New</span></a></li>
 											<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
 										</ul>
@@ -181,8 +175,8 @@
 											<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
 											<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
 											<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
-											<li><a href="team-overview.html">Team Overview v1</a></li>
-											<li><a href="team-overview-2.html">Team Overview v2</a></li>
+											<li class=""><a href="team-overview.html">Team Overview v1</a></li>
+											<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
 										</ul>
 										<ul class="col-md-4">
 											<li><a href="team-overview.html?slide=1">Team Statistics</a></li>
@@ -242,74 +236,353 @@
 					</li>
 				</ul>
 			</nav>
-			<!-- Main Navigation Right / End -->
+			<!-- Main Navigation / End -->
+
+			<!-- Header Actions -->
+			<div class="header-actions">
+				<div class="header-top-bar-toggle d-md-none hide">
+					<svg role="img" class="df-icon df-icon--joystick">
+						<use xlink:href="assets/img/necromancers.svg#joystick" />
+					</svg>
+					<svg role="img" class="df-icon df-icon--close">
+						<use xlink:href="assets/img/necromancers.svg#close" />
+					</svg>
+				</div>
+				<div class="header-social-toggle d-none d-md-block">
+					<svg role="img" class="df-icon df-icon--thumb-up">
+						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
+					</svg>
+					<span class="header-social-toggle__plus">&nbsp;</span>
+					<ul class="social-menu social-menu--header">
+						<li><a href="https://discord.gg/xxxx"><span class="link-subtitle">Discord</span>Necrochat</a>
+						</li>
+						<li><a href="https://twitch.tv/"><span class="link-subtitle">Twitch</span>Necroplay</a></li>
+						<li><a href="https://twitter.com/danfisher_dev"><span
+									class="link-subtitle">Twitter</span>Necrotwt</a></li>
+						<li><a href="https://www.facebook.com/danfisher.dev/"><span
+									class="link-subtitle">Facebook</span>Necrogame</a></li>
+					</ul>
+				</div>
+				<div class="header-cart-toggle">
+					<svg role="img" class="df-icon df-icon--bag">
+						<use xlink:href="assets/img/necromancers.svg#bag" />
+					</svg>
+					<svg role="img" class="df-icon df-icon--close">
+						<use xlink:href="assets/img/necromancers.svg#close" />
+					</svg>
+					<span class="header-cart-toggle__items-count">4</span>
+				</div>
+				<div class="header-search-toggle">
+					<svg role="img" class="df-icon df-icon--search">
+						<use xlink:href="assets/img/necromancers.svg#search" />
+					</svg>
+					<svg role="img" class="df-icon df-icon--search-close">
+						<use xlink:href="assets/img/necromancers.svg#search-close" />
+					</svg>
+				</div>
+				<div class="header-account hide">
+					<div class="header-account__avatar">
+						<img src="assets/img/samples/account-user-avatar.jpg"
+							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
+					</div>
+					<div class="header-account__body">
+						Hello!
+						<div class="header-account__name">James Spiegel</div>
+					</div>
+					<div class="header-account__icon">
+						<a href="shop-account-settings.html">
+							<svg role="img" class="df-icon df-icon--account">
+								<use xlink:href="assets/img/necromancers.svg#account" />
+							</svg>
+						</a>
+						<a href="login-register.html">
+							<svg role="img" class="df-icon df-icon--logout">
+								<use xlink:href="assets/img/necromancers.svg#logout" />
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="header-menu-toggle">
+					<div class="header-menu-toggle__inner">
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+						<span>&nbsp;</span>
+					</div>
+				</div>
+			</div>
+			<!-- Header Actions / End -->
 		</header>
 		<!-- Header / End -->
 
 		<!-- Content
 		================================================== -->
-		<main class="site-content text-center" id="wrapper">
+		<main class="site-content" id="wrapper">
 
-			<div class="site-content__center">
-				<h1 class="text-white landing-title"><span class="subtitle landing-subtitle">the best shooting
-						game</span>The challenge shot</h1>
-				<a href="home.html" class="btn btn-primary btn-lg btn--landing"><span>Start Browsing!</span></a>
+			<div class="page-heading page-heading--loop page-heading--streams-archive bg-image bg--ph-02">
+				<div class="page-heading__subtitle h5 color-warning">The Challenge Shot</div>
+				<h1 class="page-heading__title h2">All </br>weapons</h1>
+				<div class="page-heading__body">
+					<svg role="img" class="df-icon df-icon--twitch-word-logo">
+						<use xlink:href="assets/img/necromancers.svg#twitch-word-logo" />
+					</svg>
+					<div class="h5">explore all weapons </br>in the game!</div>
+					<p>Select the <span class="color-warning font-bold">type of weapon</span> and filter all weapons in
+						the game
+					</p>
+				</div>
+
+				<!-- Filter -->
+				<ul class="streams-filter filter js-filter list-unstyled">
+
+					<li>
+						<button class="btn active" data-filter="*">
+							<img src="assets/img/samples/streams-filter-avatar-01.png" alt="">
+						</button>
+					</li>
+					<li>
+						<button class="btn " data-filter=".stream-1">
+							<img src="assets/img/armas/ak47.png" alt="">
+						</button>
+					</li>
+					<li>
+						<button class="btn " data-filter=".stream-2">
+							<img src="assets/img/armas/pistolaFondo.png" alt="">
+						</button>
+					</li>
+					<li>
+						<button class="btn " data-filter=".stream-3">
+							<img src="assets/img/armas/m249Fondo.png" alt="">
+						</button>
+					</li>
+					<li>
+						<button class="btn " data-filter=".stream-4">
+							<img src="assets/img/armas/awmFondo.png" alt="">
+						</button>
+					</li>
+					<!-- <li>
+						<button class="btn " data-filter=".stream-5">
+							<img src="assets/img/samples/streams-filter-avatar-06.png" alt="">
+						</button>
+					</li> -->
+
+				</ul>
+				<!-- Filter / End -->
+			</div>
+			<div class="content armas-archive blog-layout--style-4">
+
+				<article class="post has-post-thumbnail stream-2 armita">
+					<div class="post__thumbnail">
+						<img src="assets/img/armas/pistolaFondo.png" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Pistol</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detailArma.html">Desert Eagle</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#"> large caliber semi-automatic pistol</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt mt-2">
+							Slow-firing pistol that packs a punch, even across long distances. <br>
+							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
+							<div class="d-flex">
+								<div class="d-flex flex-column justify-content-center align-items-center"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+								<div class="d-flex flex-column justify-content-center align-items-center ml-2"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail stream-1 armita">
+					<div class="post__thumbnail">
+						<img src="assets/img/armas/ak47.png" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Rifle</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detailArma.html">AK-47</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#"> Avtomat Kalashnikova modelo 1947</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt mt-2">
+							High damage and requires skill to control. <br>
+							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
+							<div class="d-flex">
+								<div class="d-flex flex-column justify-content-center align-items-center"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+								<div class="d-flex flex-column justify-content-center align-items-center ml-2"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+
+				<article class="post has-post-thumbnail stream-2 armita">
+					<div class="post__thumbnail">
+						<img src="assets/img/armas/revolverFondo.png" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Pistol</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detailArma.html">M1917</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#"> six shot large frame revolver</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt mt-2">
+							One bullet for the enemy, and another for the traitor. Side weapon <br>
+							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
+							<div class="d-flex">
+								<div class="d-flex flex-column justify-content-center align-items-center"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+								<div class="d-flex flex-column justify-content-center align-items-center ml-2"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail stream-3 armita">
+					<div class="post__thumbnail">
+						<img src="assets/img/armas/m249Fondo.png" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">MarksmanRifle</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detailArma.html">M249</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#"> The M249 light machine gun</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt mt-2">
+							With a clip size of 100, it"s amazingly light. Only available in airdrops. <br>
+							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
+							<div class="d-flex">
+								<div class="d-flex flex-column justify-content-center align-items-center"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+								<div class="d-flex flex-column justify-content-center align-items-center ml-2"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail stream-1 armita">
+					<div class="post__thumbnail">
+						<img src="assets/img/armas/m16Fondo.png" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">Rifle</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detailArma.html">M16</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#"> Stoner AR-15 / M16</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt mt-2">
+							A well balanced rifle suitable for all combat situations. <br>
+							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
+							<div class="d-flex">
+								<div class="d-flex flex-column justify-content-center align-items-center"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+								<div class="d-flex flex-column justify-content-center align-items-center ml-2"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="post has-post-thumbnail stream-4 armita">
+					<div class="post__thumbnail">
+						<img src="assets/img/armas/awmFondo.png" alt="">
+					</div>
+					<div class="post__body">
+						<div class="post__header">
+							<ul class="post__cats list-unstyled">
+								<li class="post__cats-item color-warning">
+									<a href="#">SR</a>
+								</li>
+							</ul>
+							<h2 class="post__title h4"><a href="detailArma.html">AWM</a></h2>
+							<ul class="post__meta list-unstyled">
+								<li class="post__meta-item post__meta-item--date">
+									<a href="#">
+										AWM is the deadliest sniper rifle</a>
+								</li>
+							</ul>
+						</div>
+						<div class="post__excerpt mt-2">
+							High damage sniper rifle with a long reload time. <br>
+							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
+							<div class="d-flex">
+								<div class="d-flex flex-column justify-content-center align-items-center"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+								<div class="d-flex flex-column justify-content-center align-items-center ml-2"><img
+										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
+									<span>Cartucho</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+
 			</div>
 
 		</main>
 
-		<!-- Footer
-		================================================== -->
-		<footer id="footer" class="footer text-center">
-			<ul class="social-menu social-menu--landing social-menu--landing-glitch">
-				<li>
-					<a href="https://www.facebook.com/danfisher.dev/" target="_blank">
-						<i class="fab fa-facebook-square"></i>
-						<span class="link-subtitle">Facebook</span>Necrogame
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/danfisher_dev" target="_blank">
-						<i class="fab fa-twitter"></i>
-						<span class="link-subtitle">Twitter</span>Necrotwt
-					</a>
-				</li>
-				<li>
-					<a href="https://twitch.tv" target="_blank">
-						<i class="fab fa-twitch"></i>
-						<span class="link-subtitle">Twitch</span>Necroplays
-					</a>
-				</li>
-				<li>
-					<a href="https://discordapp.com/" target="_blank">
-						<i class="fab fa-discord"></i>
-						<span class="link-subtitle">Discord</span>Necrochat
-					</a>
-				</li>
-			</ul>
-		</footer>
-		<!-- Footer / End -->
-
-		<div class="landing-detail landing-detail--left">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
-		<div class="landing-detail-cover landing-detail-cover--left">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
-		<div class="landing-detail landing-detail--right">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
-		<div class="landing-detail-cover landing-detail-cover--right">
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-			<span>&nbsp;</span>
-		</div>
 		<!-- Overlay -->
 		<div class="site-overlay"></div>
 		<!-- Overlay / End -->
@@ -443,10 +716,10 @@
 						<!-- Mobile Navigation -->
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
-								<li class="active">
+								<li class="">
 									<a href="#">Main Pages</a>
 									<ul class="mobile-nav__sub">
-										<li class="active"><a href="index.html">Landing Image</a></li>
+										<li class=""><a href="index.html">Landing Image</a></li>
 										<li class=""><a href="index-2.html">Landing Video</a></li>
 										<li class=""><a href="home.html">Home page</a></li>
 										<li class=""><a href="blog-post.html">Post Page</a></li>
@@ -463,7 +736,7 @@
 										<li class=""><a href="management-and-staff.html">Staff</a></li>
 										<li class=""><a href="staff-member.html">Staff Member<span
 													class="badge badge-danger">New</span></a></li>
-										<li class=""><a href="streams-archive.html">Streams Page</a></li>
+										<li class="active"><a href="streams-archive.html">Streams Page</a></li>
 										<li class=""><a href="partners.html">Our Partners</a></li>
 										<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
 										<li class=""><a href="features-typography.html">Typography</a></li>
@@ -1756,7 +2029,7 @@
 								<ul class="dl-submenu dl-megamenu">
 									<div class="row">
 										<ul class="col-md-6 col-lg-4">
-											<li class="active"><a href="index.html">Landing Image</a></li>
+											<li class=""><a href="index.html">Landing Image</a></li>
 											<li class=""><a href="index-2.html">Landing Video</a></li>
 											<li class=""><a href="home.html">Home page</a></li>
 											<li class=""><a href="blog-1.html">News v1</a></li>
@@ -1776,7 +2049,7 @@
 											<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
 											<li class=""><a href="staff-member.html">Staff Member<span
 														class="badge badge-danger">New</span></a></li>
-											<li class=""><a href="streams-archive.html">Streams Page</a></li>
+											<li class="active"><a href="streams-archive.html">Streams Page</a></li>
 											<li class=""><a href="partners.html">Our Partners</a></li>
 										</ul>
 										<ul class="col-md-12 col-lg-4">
