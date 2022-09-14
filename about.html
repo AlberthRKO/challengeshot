@@ -42,9 +42,9 @@
 
 </head>
 
-<body class="site-layout--horizontal preloader-is--active">
+<body class="preloader-is--active ">
 
-	<div class="site-wrapper">
+	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
@@ -61,7 +61,7 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="active"><a href="home.html">Home</a></li>
+					<li class=""><a href="home.html">Home</a></li>
 					<li class="">
 						<a href="#">Game</a>
 						<ul class="main-nav__sub">
@@ -71,9 +71,9 @@
 						</ul>
 					</li>
 					<li class=""><a href="blog.html">Blog</a></li>
-					<li class=""><a href="#">Features</a>
+					<li class="active"><a href="#">Features</a>
 						<ul class="main-nav__sub">
-							<li class=""><a href="about.html">About us</a></li>
+							<li class="active"><a href="about.html">About us</a></li>
 							<li class=""><a href="about.html">Objective</a></li>
 							<li class=""><a href="about.html">Vision</a></li>
 							<li class=""><a href="about.html">Support</a></li>
@@ -148,191 +148,122 @@
 		<!-- Content
 		================================================== -->
 		<main class="site-content" id="wrapper">
-
-			<div class="widget-area widger-area--before-loop widger-area--before-loop-home">
-				<figure class="page-thumbnail page-thumbnail--default page-thumbnail--default-home">
-					<img class="page-bg-logo" src="assets/img/logo/logito.png" alt="">
-					<!-- Decoration -->
-					<div class="ncr-page-decor">
-						<div class="ncr-page-decor__layer-1">
-							<div class="ncr-page-decor__layer-bg"></div>
+			<div class="site-content__inner">
+				<div class="site-content__holder">
+					<figure class="page-thumbnail page-thumbnail--default">
+						<img class="page-bg-logo" src="assets/img/logo/logito.png" alt="">
+						<!-- Decoration -->
+						<div class="ncr-page-decor">
+							<div class="ncr-page-decor__layer-1">
+								<div class="ncr-page-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-page-decor__layer-2"></div>
+							<div class="ncr-page-decor__layer-3">
+								<div class="ncr-page-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-page-decor__layer-4"></div>
+							<div class="ncr-page-decor__layer-5"></div>
+							<div class="ncr-page-decor__layer-6"></div>
 						</div>
-						<div class="ncr-page-decor__layer-2"></div>
-						<div class="ncr-page-decor__layer-3">
-							<div class="ncr-page-decor__layer-bg"></div>
+						<!-- Decoration / End -->
+					</figure>
+					<h1 class="page-title h3">About Us</h1>
+					<div class="page-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna aliqua. Ut enim ad minim en veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip.
+						</p>
+						<div class="spacer"></div>
+						<div class="world-map">
+							<div class="world-map-team world-map-team--left world-map-team--one">
+								<figure role="group">
+									<figure class="world-map-team__logo" role="group">
+										<img src="assets/img/logo/logo1.png"
+											srcset="assets/img/samples/logo-necromancers-32@2x.png 2x"
+											alt="Necromancers Logo">
+									</figure>
+									<figcaption>
+										<div class="world-map-team__name">The Challenge Shot</div>
+										<div class="world-map-team__country">United States</div>
+									</figcaption>
+								</figure>
+								<div class="world-map-team__anchor"></div>
+							</div>
+							<div class="world-map-team world-map-team--right world-map-team--two">
+								<figure role="group">
+									<figure class="world-map-team__logo" role="group">
+										<img src="assets/img/logo/logo1.png"
+											srcset="assets/img/samples/logo-necromancers-32@2x.png 2x"
+											alt="Necromancers Logo">
+									</figure>
+									<figcaption>
+										<div class="world-map-team__name">The Challenge Shot</div>
+										<div class="world-map-team__country">Australia (Soon!)</div>
+									</figcaption>
+								</figure>
+								<div class="world-map-team__anchor"></div>
+							</div>
 						</div>
-						<div class="ncr-page-decor__layer-4"></div>
-						<div class="ncr-page-decor__layer-5"></div>
-						<div class="ncr-page-decor__layer-6"></div>
+						<div class="spacer"></div>
+						<h4>Why The Challenge Shot?</h4>
+						<div class="spacer"></div>
+						<p>
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam, eaque ipsa quae ab illo lorem inventore veritatis et quasi
+							architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+							aspernatur.
+						</p>
+						<div class="spacer"></div>
+						<div class="row">
+							<div class="col-md-4 mb-4 mb-md-0">
+								<div class="counter">
+									<div class="counter__icon counter__icon--left">
+										<svg role="img" class="df-icon df-icon--joystick">
+											<use xlink:href="assets/img/necromancers.svg#joystick" />
+										</svg>
+									</div>
+									<div class="counter__number">979</div>
+									<div class="counter__label">Matches</div>
+								</div>
+							</div>
+							<div class="col-md-4 mb-4 mb-md-0">
+								<div class="counter">
+									<div class="counter__icon counter__icon--left">
+										<svg role="img" class="df-icon df-icon--trophy">
+											<use xlink:href="assets/img/necromancers.svg#trophy" />
+										</svg>
+									</div>
+									<div class="counter__number">34</div>
+									<div class="counter__label">Trophies</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="counter">
+									<div class="counter__icon counter__icon--left">
+										<svg role="img" class="df-icon df-icon--chart">
+											<use xlink:href="assets/img/necromancers.svg#chart" />
+										</svg>
+									</div>
+									<div class="counter__number">82.1</div>
+									<div class="counter__label">Win Ratio</div>
+								</div>
+							</div>
+						</div>
+						<div class="spacer"></div>
+						<figure class="lightbox lightbox--video">
+							<a href="https://www.youtube.com/watch?v&#x3D;XE0fU9PCrWE" class="mp_iframe">
+								<img src="assets/img/samples/features-about-us-img-01.jpg" alt="">
+								<span class="lightbox__icon">
+									<!---->
+								</span>
+							</a>
+						</figure>
 					</div>
-					<!-- Decoration / End -->
-				</figure>
-			</div>
-
-
-			<div class="content blog-layout--style-1">
-
-				<article class="post has-post-thumbnail ">
-					<div class="post__thumbnail post__thumbnail-blog">
-
-						<a href="blog-post.html"><img src="assets/img/objetivos/38280.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body content-blog d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-warning">
-									<a href="about.html">About us</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4 titulo-blog"><a href="blog-post.html">About Us Game Shooter</a>
-							</h2>
-
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="about.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-				<article class="post has-post-thumbnail post__thumbnail-blog">
-					<div class="post__thumbnail">
-
-						<a href="blog-post.html"><img
-								src="assets/img/objetivos/garena-free-fire_1280x720_xtrafondos.com.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-success">
-									<a href="#">Objective</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4"><a href="about.html">Objective The Challenge Shot</a></h2>
-
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="about.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-
-				<article class="post has-post-thumbnail post__thumbnail-blog">
-					<div class="post__thumbnail">
-
-						<a href="blog-post.html"><img src="assets/img/blog/blog3.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-success">
-									<a href="#">Vision</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4"><a href="about.html">Vision of the game</a></h2>
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="about.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-				<article class="post has-post-thumbnail post__thumbnail-blog">
-					<div class="post__thumbnail">
-
-						<a href="blog-post.html"><img
-								src="assets/img/objetivos/HD-wallpaper-de-videojuegos-juega-fast-fire.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-warning">
-									<a href="#">Support</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4"><a href="about.html">Support The Challenge Shot</a></h2>
-
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="about.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-
-			</div>
-
-			<div class="widget-area widger-area--before-loop">
-				<div class="widget widget-carousel slick-slider">
-					<article class="widget-carousel__item player bg-image bg--ph-03">
-						<div class="player__subtitle h6">Bounty Hunter</div>
-						<h1 class="player__title h3 color-primary">CHRONO</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/ronaldo.png" alt="">
-							<a href="detail.html" class="more-info-link h6 mt-n3"><span class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-					<article class="widget-carousel__item player bg-image bg--ph-05">
-						<div class="player__subtitle h6">Bounty Hunter</div>
-						<h1 class="player__title h3 color-primary">MOCO</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/moco.png" alt="">
-							<a href="detail2.html" class="more-info-link h6 mt-n3"><span class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-					<article class="widget-carousel__item player bg-image bg--ph-06">
-						<div class="player__subtitle h6">Bounty Hunter</div>
-						<h1 class="player__title h3 color-primary">KENTA</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/8af9a328d62a330a76221b79670daf37.png" alt="">
-							<a href="detail.html" class="more-info-link h6 mt-n3"><span class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-
 				</div>
 			</div>
-
-
-
 		</main>
+
 
 		<!-- Overlay -->
 		<div class="site-overlay"></div>
@@ -342,7 +273,7 @@
 		<div class="search-panel">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
-					<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+					<input type="text" class="form-control" value="" placeholder="What are you looking for...?">
 				</form>
 				<span>Write what you are looking for, choose the filters and press enter to begin your search!</span>
 			</div>
@@ -379,7 +310,7 @@
 						Blog
 					</a>
 				</li>
-				<li class="mobile-bar-item">
+				<li class="mobile-bar-item active">
 					<a class="mobile-bar-item__header collapsed" data-toggle="collapse" href="#mobile_collapse_2"
 						role="button" aria-expanded="false" aria-controls="mobile_collapse_2">
 						Features
@@ -389,7 +320,7 @@
 						<!-- Mobile Navigation -->
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
-								<li class=""><a href="about.html">About us</a></li>
+								<li class="active"><a href="about.html">About us</a></li>
 								<li class=""><a href="about.html">Objective</a></li>
 								<li class=""><a href="about.html">Vision</a></li>
 								<li class=""><a href="about.html">Support</a></li>
@@ -407,7 +338,7 @@
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
 						<ul class="dl-menu dl-menuopen">
-							<li class="active">
+							<li class="">
 								<a href="home.html">Home</a>
 							</li>
 							<li class="">
@@ -421,10 +352,10 @@
 							<li class="">
 								<a href="blog.html">Blog</a>
 							</li>
-							<li class="">
+							<li class="active">
 								<a href="#">Features</a>
 								<ul class="dl-submenu">
-									<li class=""><a href="about.html">About us</a></li>
+									<li class="active"><a href="about.html">About us</a></li>
 									<li class=""><a href="about.html">Objective</a></li>
 									<li class=""><a href="about.html">Vision</a></li>
 									<li class=""><a href="about.html">Support</a></li>
