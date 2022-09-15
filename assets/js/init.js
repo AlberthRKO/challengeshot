@@ -1071,7 +1071,8 @@
               {
                 featureType: "poi.park",
                 elementType: "geometry.fill",
-                stylers: [{ color: "#a3ff12" }],
+                // arreglos de lugares
+                stylers: [{ color: "#af6871" }],
               },
               {
                 featureType: "road",
