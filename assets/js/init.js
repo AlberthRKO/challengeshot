@@ -653,10 +653,10 @@
           slidesToShow: 2,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 3000,
           arrows: true,
           dots: false,
-          infinite: false,
+          infinite: true,
           prevArrow: $(".js-team-player__nav-prev"),
           nextArrow: $(".js-team-player__nav-next"),
 
@@ -664,7 +664,7 @@
             {
               breakpoint: 992,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
               },
             },
             {
