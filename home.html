@@ -20,12 +20,12 @@
 	<meta name="twitter:url" content="https://thechallengeshot.com/" />
 	<meta name="twitter:description"
 		content="Challenge Shot is a game with a confrontation narrative between shock troops versus terrorists, being possible to create clans within these two categories and participate in rounds of competition between them." />
-	<meta name="twitter:image" content="https://thechallengeshot.com/assets/img/logo/logo2.png" />
+	<meta name="twitter:image" content="https://thechallengeshot.com/assets/img/logo/logoIcon.png" />
 	<meta property="og:site_name" content="The Challenge Shot" />
 	<meta property="og:title" content="The Challenge Shot" />
 	<meta property="og:description"
 		content="Challenge Shot is a game with a confrontation narrative between shock troops versus terrorists, being possible to create clans within these two categories and participate in rounds of competition between them." />
-	<meta property="og:image" itemprop="image" content="https://thechallengeshot.com/assets/img/logo/logo2.png" />
+	<meta property="og:image" itemprop="image" content="https://thechallengeshot.com/assets/img/logo/logoIcon.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://thechallengeshot.com/" />
 
@@ -33,9 +33,9 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="assets/img/logo/logo2.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo/logo2.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/logo2.png">
+	<link rel="shortcut icon" href="assets/img/logo/logoIcon.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo/logoIcon.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/logoIcon.png">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -67,7 +67,7 @@
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--bottom">
+		<header id="header" class="site-header site-header--top">
 
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
@@ -106,7 +106,7 @@
 			<!-- Header Actions -->
 			<div class="header-actions">
 
-				<div class="header-social-toggle d-none d-md-block">
+				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
 						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
 					</svg>
@@ -121,7 +121,7 @@
 									class="link-subtitle">Facebook</span>Necrogame</a></li>
 					</ul>
 				</div>
-				<div class="header-search-toggle">
+				<div class="header-search-toggle pr-lg-4">
 					<svg role="img" class="df-icon df-icon--search">
 						<use xlink:href="assets/img/necromancers.svg#search" />
 					</svg>
@@ -129,7 +129,22 @@
 						<use xlink:href="assets/img/necromancers.svg#search-close" />
 					</svg>
 				</div>
-				<div class="header-account hide">
+
+				<!-- seccion de busqueda -->
+				<!-- Search Panel -->
+				<div class="search-panel mx-auto">
+					<div class="search-panel__content">
+						<form action="#" id="header-search-form" class="search-form search-form--header">
+							<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+						</form>
+						<span class="d-none">Write what you are looking for, choose the filters and press enter to begin
+							your
+							search!</span>
+					</div>
+				</div>
+
+
+				<div class="header-account d-none hide">
 					<div class="header-account__avatar">
 						<img src="assets/img/samples/account-user-avatar.jpg"
 							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
@@ -151,7 +166,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="header-menu-toggle">
+				<div class="header-menu-toggle d-lg-none">
 					<div class="header-menu-toggle__inner">
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
@@ -167,9 +182,10 @@
 		================================================== -->
 		<main class="site-content" id="wrapper">
 
+			<!-- seccion de portada vertical -->
 			<div class="widget-area widger-area--before-loop widger-area--before-loop-home">
 				<figure class="page-thumbnail page-thumbnail--default page-thumbnail--default-home">
-					<img class="page-bg-logo" src="assets/img/logo/logito.png" alt="">
+					<img class="page-bg-logo px-3" src="assets/img/logo/logoBanner.png" alt="">
 					<!-- Decoration -->
 					<div class="ncr-page-decor">
 						<div class="ncr-page-decor__layer-1">
@@ -187,7 +203,7 @@
 				</figure>
 			</div>
 
-
+			<!-- section de content -->
 			<div class="content blog-layout--style-1">
 
 				<article class="post has-post-thumbnail ">
@@ -311,7 +327,7 @@
 				</article>
 
 			</div>
-
+			<!-- section swiper de personajes -->
 			<div class="widget-area widger-area--before-loop">
 				<div class="widget widget-carousel slick-slider">
 					<article class="widget-carousel__item player bg-image bg--port">
@@ -367,7 +383,7 @@
 		<!-- Overlay / End -->
 
 		<!-- Search Panel -->
-		<div class="search-panel">
+		<div class="search-panel d-none">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
 					<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
@@ -377,8 +393,8 @@
 		</div>
 		<!-- Search Panel / End -->
 		<!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+		<div class="menu-panel d-lg-none">
+			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="home.html">
 						Home
@@ -430,7 +446,7 @@
 				</li>
 
 			</ul>
-			<div class="menu-panel__content d-none d-md-flex">
+			<div class="menu-panel__content d-none d-lg-flex">
 				<div class="menu-panel__navigation">
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
@@ -554,16 +570,17 @@
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
 			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
+				<!-- <div class="pong-loader"></div>
 				<svg role="img" class="df-icon df-icon--preloader-arcade">
 					<use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
-				</svg>
+				</svg> -->
+				<img src="assets/img/logo/logoIcon.png" alt="">
 			</div>
 		</div>
 	</div>
 
 	<!-- The cursor elements -->
-	<div class="df-custom-cursor-wrap">
+	<div class="df-custom-cursor-wrap d-none">
 		<div id="df-custom-cursor"></div>
 	</div>
 

@@ -26945,11 +26945,11 @@ body:not(.cursor-is--active) .widget-partners-carousel .slick-arrow {
   border-color: #a3ff12;
 }
 
-.df-custom-cursor-wrap {
+.df-custom-cursor-wrap d-none {
   pointer-events: none;
 }
 @media (hover: hover) and (pointer: fine) {
-  .df-custom-cursor-wrap {
+  .df-custom-cursor-wrap d-none {
     position: fixed;
     top: 0;
     left: 0;
