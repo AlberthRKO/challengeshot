@@ -248,6 +248,9 @@ h1 .subtitle {
 }
 .widget-carousel .player__subtitle {
   margin-top: 4.5rem;
+  font-weight: bold !important;
+  font-size: 1.5rem;
+  color: white;
 }
 .widget-carousel .player__thumbnail {
   margin-top: 1rem;
