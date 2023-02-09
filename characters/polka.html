@@ -30,9 +30,9 @@
 	<meta property="og:url" content="https://thechallengeshot.com/" />
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="assets/img/logo/logoIcon.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/logo/logoIcon.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/logo/logoIcon.png">
+	<link rel="shortcut icon" href="../assets/img/logo/logoIcon.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../assets/img/logo/logoIcon.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../assets/img/logo/logoIcon.png">
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -45,30 +45,30 @@
 	<!-- CSS
 	================================================== -->
 	<!-- Vendor CSS -->
-	<link href="assets/vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
-	<link href="assets/vendor/slick/css/slick.css" rel="stylesheet">
-	<link href="assets/vendor/nanoscroller/css/nanoscroller.css" rel="stylesheet">
-	<link href="assets/vendor/fontawesome/css/brands.css" rel="stylesheet">
+	<link href="../assets/vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+	<link href="../assets/vendor/slick/css/slick.css" rel="stylesheet">
+	<link href="../assets/vendor/nanoscroller/css/nanoscroller.css" rel="stylesheet">
+	<link href="../assets/vendor/fontawesome/css/brands.css" rel="stylesheet">
 
 	<!-- Template CSS-->
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="../assets/css/style.css" rel="stylesheet">
 
 	<!-- Custom CSS-->
-	<link href="assets/css/custom.css" rel="stylesheet">
+	<link href="../assets/css/custom.css" rel="stylesheet">
 
 </head>
 
-<body class="preloader-is--active bg-image bg-fixed bg--texture-03 bg--dotted-3x3">
+<body class="preloader-is--active preloader--no-transform bg-image bg-fixed bg--texture-03 bg--dotted-3x3">
 
 	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--bottom">
+		<header id="header" class="site-header site-header--top">
 
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="Necromancers"></a>
+				<a href="../index.html"><img src="../assets/img/logo/logo1.png" alt="The Challenge Shoot"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 
@@ -76,24 +76,24 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class=""><a href="home.html">Home</a></li>
+					<li class=""><a href="../home.html">Home</a></li>
 					<li class="">
 						<a href="#">Game</a>
 						<ul class="main-nav__sub">
-							<li class=""><a href="weapons.html">Weapons</a></li>
-							<li class=""><a href="characters.html">Characters</a></li>
-							<li class=""><a href="lastPerson.html">Latest Characters</a></li>
+							<li class=""><a href="../weapons.html">Weapons</a></li>
+							<li class=""><a href="../characters.html">Characters</a></li>
+							<li class=""><a href="../lastPerson.html">Latest Characters</a></li>
 						</ul>
 					</li>
-					<li class=""><a href="blog.html">Blog</a></li>
+					<li class=""><a href="../blog.html">Blog</a></li>
 					<li class=""><a href="#">Features</a>
 						<ul class="main-nav__sub">
-							<li class=""><a href="about.html">About us</a></li>
-							<li class=""><a href="objective.html">Objective</a></li>
-							<li class=""><a href="vision.html">Vision</a></li>
-							<li class=""><a href="support.html">Support</a></li>
-							<li class=""><a href="faq.html">Faq</a></li>
-							<li class=""><a href="contact.html">Contact</a></li>
+							<li class=""><a href="../about.html">About us</a></li>
+							<!-- <li class=""><a href="objective.html">Objective</a></li>
+							<li class=""><a href="vision.html">Vision</a></li> -->
+							<li class=""><a href="../support.html">Support</a></li>
+							<!-- <li class=""><a href="faq.html">Faq</a></li> -->
+							<li class=""><a href="../contact.html">Contact</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -103,7 +103,7 @@
 			<!-- Header Actions -->
 			<div class="header-actions">
 
-				<div class="header-social-toggle d-none d-md-block">
+				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
 						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
 					</svg>
@@ -118,17 +118,30 @@
 									class="link-subtitle">Facebook</span>Necrogame</a></li>
 					</ul>
 				</div>
-				<div class="header-search-toggle">
+				<div class="header-search-toggle pr-lg-4">
 					<svg role="img" class="df-icon df-icon--search">
-						<use xlink:href="assets/img/necromancers.svg#search" />
+						<use xlink:href="../assets/img/necromancers.svg#search" />
 					</svg>
 					<svg role="img" class="df-icon df-icon--search-close">
-						<use xlink:href="assets/img/necromancers.svg#search-close" />
+						<use xlink:href="../assets/img/necromancers.svg#search-close" />
 					</svg>
 				</div>
-				<div class="header-account hide">
+
+				<!-- Search Panel -->
+				<div class="search-panel mx-auto">
+					<div class="search-panel__content">
+						<form action="#" id="header-search-form" class="search-form search-form--header">
+							<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+						</form>
+						<span class="d-none">Write what you are looking for, choose the filters and press enter to begin
+							your
+							search!</span>
+					</div>
+				</div>
+
+				<div class="header-account d-none hide">
 					<div class="header-account__avatar">
-						<img src="assets/img/samples/account-user-avatar.jpg"
+						<img src="../assets/img/samples/account-user-avatar.jpg"
 							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
 					</div>
 					<div class="header-account__body">
@@ -136,19 +149,19 @@
 						<div class="header-account__name">James Spiegel</div>
 					</div>
 					<div class="header-account__icon">
-						<a href="shop-account-settings.html">
+						<a href="../shop-account-settings.html">
 							<svg role="img" class="df-icon df-icon--account">
 								<use xlink:href="assets/img/necromancers.svg#account" />
 							</svg>
 						</a>
-						<a href="login-register.html">
+						<a href="../login-register.html">
 							<svg role="img" class="df-icon df-icon--logout">
 								<use xlink:href="assets/img/necromancers.svg#logout" />
 							</svg>
 						</a>
 					</div>
 				</div>
-				<div class="header-menu-toggle">
+				<div class="header-menu-toggle d-lg-none">
 					<div class="header-menu-toggle__inner">
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
@@ -165,15 +178,15 @@
 		================================================== -->
 		<main class="site-content player-info-page" id="wrapper">
 			<div class="container container--large">
-				<div class="team-carousel">
+				<div class="team-carousel" style="margin-top: 4.5rem;">
 					<div class="team-carousel__content">
 
 						<!-- Section: Lineups -->
 						<div class="team-carousel__item" data-icon="lineups">
 							<div class="row">
 								<div class="col-lg-6">
-									<h3 class="player-info-subtitle h4 text-uppercase">Elite Soldier</h3>
-									<h2 class="player-info-title h1">Bastian</h2>
+									<h3 class="player-info-subtitle h4 text-uppercase">gangster</h3>
+									<h2 class="player-info-title h1">Polka</h2>
 									<div class="row d-none">
 										<div class="col-6 col-md-6 col-xl-4">
 											<div class="player-info-detail">
@@ -195,23 +208,24 @@
 										</div>
 
 									</div>
-									<p>Born Sebastian Miller, he is the youngest elite soldier in his group, a combat
-										prodigy.
-										Orphaned from both his father and mother when he was just 5 years old, Bastian
-										was
-										raised by his grandfather, a war veteran. All the learning about discipline,
-										loyalty, and
-										bravery that his grandfather gave him, shaped Bastian's character, transforming
-										him into
-										a soldier who values justice, companionship, and improvement through training
-										and
-										tactical studies. The kind of soldier every elite group would like to have.
-										<br><br>
-										Now, Bastian will join Brock's group, chasing terrorists and their financiers,
-										seeking to
-										unmask the internal enemies of the armed forces and help his friend Brock
-										discover those
-										responsible for the death of his beloved.
+									<p>The only child of a famous Polish mobster, adored by his father and educated to
+										be the
+										successor to his empire of crime, trafficking, prostitution, and murder, Polka
+										followed the
+										path traced for him by his father and became the head of the largest criminal
+										organization
+										in eastern Europe. <br><br>
+										Owner of an intolerant, cruel and ruthless personality, Polka is feared by his
+										henchmen
+										and hated by his enemies, he is very good with knives and does not miss the
+										opportunity
+										to use them to hurt and torture his opponents. Wanting to extend his power and
+										influence
+										beyond Eastern Europe, he targeted international lands, expanding his chaos and
+										terror
+										to the United States, bringing together criminals, murderers, and mercenaries
+										from
+										around the world and financially allying himself with powerful people there.
 									</p>
 								</div>
 							</div>
@@ -295,7 +309,7 @@
 									<div class="player-info-page__statistics-footer">
 										<div class="player-info-detail player-info-detail--hero">
 											<div class="player-info-detail__hero">
-												<img src="assets/img/samples/player-info-hero-photo.png" alt="">
+												<img src="../assets/img/samples/player-info-hero-photo.png" alt="">
 											</div>
 											<div class="player-info-detail__body">
 												<div class="player-info-detail__title">Simmelia</div>
@@ -333,7 +347,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -348,7 +363,7 @@
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--achievements-trophy">
 															<use
-																xlink:href="assets/img/necromancers.svg#achievements-trophy" />
+																xlink:href="../assets/img/necromancers.svg#achievements-trophy" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -362,7 +377,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -377,7 +393,7 @@
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--achievements-trophy">
 															<use
-																xlink:href="assets/img/necromancers.svg#achievements-trophy" />
+																xlink:href="../assets/img/necromancers.svg#achievements-trophy" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -391,7 +407,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -409,7 +426,7 @@
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--achievements-trophy">
 															<use
-																xlink:href="assets/img/necromancers.svg#achievements-trophy" />
+																xlink:href="../assets/img/necromancers.svg#achievements-trophy" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -423,7 +440,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -438,7 +456,7 @@
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--achievements-trophy">
 															<use
-																xlink:href="assets/img/necromancers.svg#achievements-trophy" />
+																xlink:href="../assets/img/necromancers.svg#achievements-trophy" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -452,7 +470,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -467,7 +486,7 @@
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--achievements-trophy">
 															<use
-																xlink:href="assets/img/necromancers.svg#achievements-trophy" />
+																xlink:href="../assets/img/necromancers.svg#achievements-trophy" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -481,7 +500,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -496,7 +516,7 @@
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--achievements-trophy">
 															<use
-																xlink:href="assets/img/necromancers.svg#achievements-trophy" />
+																xlink:href="../assets/img/necromancers.svg#achievements-trophy" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -510,7 +530,8 @@
 												<div class="player-info-detail player-info-detail--icon">
 													<div class="player-info-detail__icon player-info-detail__icon--lg">
 														<svg role="img" class="df-icon df-icon--award-medal">
-															<use xlink:href="assets/img/necromancers.svg#award-medal" />
+															<use
+																xlink:href="../assets/img/necromancers.svg#award-medal" />
 														</svg>
 													</div>
 													<div class="player-info-detail__body">
@@ -530,7 +551,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon">
 													<svg role="img" class="df-icon df-icon--kills">
-														<use xlink:href="assets/img/necromancers.svg#kills" />
+														<use xlink:href="../assets/img/necromancers.svg#kills" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -543,7 +564,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon">
 													<svg role="img" class="df-icon df-icon--damage">
-														<use xlink:href="assets/img/necromancers.svg#damage" />
+														<use xlink:href="../assets/img/necromancers.svg#damage" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -556,7 +577,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon">
 													<svg role="img" class="df-icon df-icon--healing">
-														<use xlink:href="assets/img/necromancers.svg#healing" />
+														<use xlink:href="../assets/img/necromancers.svg#healing" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -584,7 +605,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon player-info-detail__icon--lg">
 													<svg role="img" class="df-icon df-icon--gamer-mouse">
-														<use xlink:href="assets/img/necromancers.svg#gamer-mouse" />
+														<use xlink:href="../assets/img/necromancers.svg#gamer-mouse" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -598,7 +619,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon player-info-detail__icon--lg">
 													<svg role="img" class="df-icon df-icon--headset">
-														<use xlink:href="assets/img/necromancers.svg#headset" />
+														<use xlink:href="../assets/img/necromancers.svg#headset" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -612,7 +633,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon player-info-detail__icon--lg">
 													<svg role="img" class="df-icon df-icon--keyboard">
-														<use xlink:href="assets/img/necromancers.svg#keyboard" />
+														<use xlink:href="../assets/img/necromancers.svg#keyboard" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -626,7 +647,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon player-info-detail__icon--lg">
 													<svg role="img" class="df-icon df-icon--screen">
-														<use xlink:href="assets/img/necromancers.svg#screen" />
+														<use xlink:href="../assets/img/necromancers.svg#screen" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -640,7 +661,7 @@
 											<div class="player-info-detail player-info-detail--icon">
 												<div class="player-info-detail__icon player-info-detail__icon--lg">
 													<svg role="img" class="df-icon df-icon--gaming-chair">
-														<use xlink:href="assets/img/necromancers.svg#gaming-chair" />
+														<use xlink:href="../assets/img/necromancers.svg#gaming-chair" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -655,7 +676,7 @@
 												<div class="player-info-detail__icon player-info-detail__icon--lg">
 													<svg role="img" class="df-icon df-icon--mousepad-and-mouse">
 														<use
-															xlink:href="assets/img/necromancers.svg#mousepad-and-mouse" />
+															xlink:href="../assets/img/necromancers.svg#mousepad-and-mouse" />
 													</svg>
 												</div>
 												<div class="player-info-detail__body">
@@ -688,13 +709,14 @@
 										data-provider="vimeo" data-thumbnail="assets/img/samples/stream-img-01.jpg"
 										data-setsize="true" data-easy-embed>
 										<div class="stream__thumbnail">
-											<img src="assets/img/samples/stream-img-01.jpg" alt="">
+											<img src="../assets/img/samples/stream-img-01.jpg" alt="">
 										</div>
 										<div class="stream__icon"></div>
 										<div class="stream__header">
 											<div class="stream__info">
 												<div class="stream__avatar">
-													<img src="assets/img/samples/streams-archive-avatar-01.jpg" alt="">
+													<img src="../assets/img/samples/streams-archive-avatar-01.jpg"
+														alt="">
 												</div>
 												<h6 class="stream__title">Davikinger plays &quot;Clash of eternity&quot;
 													<span class="badge badge-danger badge-live">Live</span>
@@ -712,9 +734,9 @@
 
 					</div>
 				</div>
-				<div class="team-player">
+				<div class="team-player" style="margin-top: 4.5rem;">
 					<div class="team-player__photo mx-auto team-player__person">
-						<img src="assets/img/personajes/bastian.png" alt="">
+						<img src="../assets/img/personajes/polka.png" alt="">
 					</div>
 					<div class="team-player__base">
 						<!-- Decoration -->
@@ -741,7 +763,7 @@
 		<!-- Overlay / End -->
 
 		<!-- Search Panel -->
-		<div class="search-panel">
+		<div class="search-panel d-none">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
 					<input type="text" class="form-control" value="" placeholder="What are you looking for...?">
@@ -751,10 +773,10 @@
 		</div>
 		<!-- Search Panel / End -->
 		<!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+		<div class="menu-panel d-lg-none">
+			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="home.html">
+					<a class="mobile-bar-item__header" href="../home.html">
 						Home
 					</a>
 				</li>
@@ -768,16 +790,16 @@
 						<!-- Mobile Navigation -->
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
-								<li class=""><a href="weapons.html">Weapons</a></li>
-								<li class=""><a href="characters.html">Characters</a></li>
-								<li class=""><a href="lastPerson.html">Latest Characters</a></li>
+								<li class=""><a href="../weapons.html">Weapons</a></li>
+								<li class=""><a href="../characters.html">Characters</a></li>
+								<li class=""><a href="../lastPerson.html">Latest Characters</a></li>
 							</ul>
 						</nav>
 						<!-- Mobile Navigation / End -->
 					</div>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="home.html">
+					<a class="mobile-bar-item__header" href="../blog.html">
 						Blog
 					</a>
 				</li>
@@ -791,12 +813,12 @@
 						<!-- Mobile Navigation -->
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
-								<li class=""><a href="about.html">About us</a></li>
-								<li class=""><a href="objective.html">Objective</a></li>
-								<li class=""><a href="vision.html">Vision</a></li>
-								<li class=""><a href="support.html">Support</a></li>
-								<li class=""><a href="faq.html">Faq</a></li>
-								<li class=""><a href="contact.html">Contact</a></li>
+								<li class=""><a href="../about.html">About us</a></li>
+								<!-- <li class=""><a href="objective.html">Objective</a></li>
+								<li class=""><a href="vision.html">Vision</a></li> -->
+								<li class=""><a href="../support.html">Support</a></li>
+								<!-- <li class=""><a href="faq.html">Faq</a></li> -->
+								<li class=""><a href="../contact.html">Contact</a></li>
 							</ul>
 						</nav>
 						<!-- Mobile Navigation / End -->
@@ -804,7 +826,7 @@
 				</li>
 
 			</ul>
-			<div class="menu-panel__content d-none d-md-flex">
+			<div class="menu-panel__content d-none d-lg-flex">
 				<div class="menu-panel__navigation">
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
@@ -895,22 +917,22 @@
 								<div class="widget__content">
 									<ul>
 										<li>
-											<img src="assets/img/samples/partner-carousel-img-01.png" alt="">
+											<img src="../assets/img/samples/partner-carousel-img-01.png" alt="">
 										</li>
 										<li>
-											<img src="assets/img/samples/partner-carousel-img-02.png" alt="">
+											<img src="../assets/img/samples/partner-carousel-img-02.png" alt="">
 										</li>
 										<li>
-											<img src="assets/img/samples/partner-carousel-img-03.png" alt="">
+											<img src="../assets/img/samples/partner-carousel-img-03.png" alt="">
 										</li>
 										<li>
-											<img src="assets/img/samples/partner-carousel-img-01.png" alt="">
+											<img src="../assets/img/samples/partner-carousel-img-01.png" alt="">
 										</li>
 										<li>
-											<img src="assets/img/samples/partner-carousel-img-02.png" alt="">
+											<img src="../assets/img/samples/partner-carousel-img-02.png" alt="">
 										</li>
 										<li>
-											<img src="assets/img/samples/partner-carousel-img-03.png" alt="">
+											<img src="../assets/img/samples/partner-carousel-img-03.png" alt="">
 										</li>
 									</ul>
 								</div>
@@ -927,11 +949,8 @@
 
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
-				<svg role="img" class="df-icon df-icon--preloader-arcade">
-					<use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
-				</svg>
+			<div class="preloader-inner fadeInUp position-relative">
+				<div class="imgPre"></div>
 			</div>
 		</div>
 	</div>
@@ -944,16 +963,16 @@
 	<!-- Javascript Files
 	================================================== -->
 	<!-- Core JS -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/core.js"></script>
+	<script src="../assets/vendor/jquery/jquery.min.js"></script>
+	<script src="../assets/vendor/jquery/jquery-migrate.min.js"></script>
+	<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../assets/js/core.js"></script>
 
 	<!-- Vendor JS -->
 
 	<!-- Template JS -->
-	<script src="assets/js/init.js"></script>
-	<script src="assets/js/custom.js"></script>
+	<script src="../assets/js/init.js"></script>
+	<script src="../assets/js/custom.js"></script>
 
 	<!-- Duotone SVG color filter -->
 	<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">

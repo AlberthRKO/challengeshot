@@ -901,10 +901,11 @@
           adaptiveHeight: true,
           customPaging: function (slick, index) {
             var icon = slick.$slides.get(index).dataset.icon;
+            // cambiando la direccion del carusel de los personajes
             return (
               '<svg role="img" class="df-icon df-icon--' +
               icon +
-              '"><use xlink:href="assets/img/necromancers.svg#' +
+              '"><use xlink:href="../assets/img/necromancers.svg#' +
               icon +
               '"/></svg>'
             );

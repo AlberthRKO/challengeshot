@@ -59,17 +59,17 @@
 
 </head>
 
-<body class="preloader-is--active bg-image bg-fixed bg--texture-06 bg--dotted-3x3">
+<body class="preloader-is--active preloader--no-transform bg-image bg-fixed bg--texture-06 bg--dotted-3x3">
 
 	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--bottom">
+		<header id="header" class="site-header site-header--top">
 
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="Necromancers"></a>
+				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="The Challenge Shot"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 
@@ -90,10 +90,10 @@
 					<li class=""><a href="#">Features</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="about.html">About us</a></li>
-							<li class=""><a href="objective.html">Objective</a></li>
-							<li class=""><a href="vision.html">Vision</a></li>
+							<!-- <li class=""><a href="objective.html">Objective</a></li>
+							<li class=""><a href="vision.html">Vision</a></li> -->
 							<li class=""><a href="support.html">Support</a></li>
-							<li class=""><a href="faq.html">Faq</a></li>
+							<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 							<li class=""><a href="contact.html">Contact</a></li>
 						</ul>
 					</li>
@@ -104,7 +104,17 @@
 			<!-- Header Actions -->
 			<div class="header-actions">
 
-				<div class="header-social-toggle d-none d-md-block">
+				<div class="header-pagination"><a href="#"
+						class="header-scroll-arrow header-scroll-arrow--left js-team-player__nav-prev slick-arrow"
+						aria-disabled="false"><svg role="img" class="df-icon df-icon--left-arrow">
+							<use xlink:href="assets/img/necromancers.svg#left-arrow"></use>
+						</svg> </a><a href="#"
+						class="header-scroll-arrow header-scroll-arrow--right js-team-player__nav-next slick-arrow"
+						aria-disabled="false"><svg role="img" class="df-icon df-icon--right-arrow">
+							<use xlink:href="assets/img/necromancers.svg#right-arrow"></use>
+						</svg></a></div>
+
+				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
 						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
 					</svg>
@@ -119,7 +129,7 @@
 									class="link-subtitle">Facebook</span>Necrogame</a></li>
 					</ul>
 				</div>
-				<div class="header-search-toggle">
+				<div class="header-search-toggle pr-lg-4">
 					<svg role="img" class="df-icon df-icon--search">
 						<use xlink:href="assets/img/necromancers.svg#search" />
 					</svg>
@@ -127,7 +137,22 @@
 						<use xlink:href="assets/img/necromancers.svg#search-close" />
 					</svg>
 				</div>
-				<div class="header-account hide">
+
+				<!-- seccion de busqueda -->
+				<!-- Search Panel -->
+				<div class="search-panel mx-auto">
+					<div class="search-panel__content">
+						<form action="#" id="header-search-form" class="search-form search-form--header">
+							<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+						</form>
+						<span class="d-none">Write what you are looking for, choose the filters and press enter to begin
+							your
+							search!</span>
+					</div>
+				</div>
+
+
+				<div class="header-account d-none hide">
 					<div class="header-account__avatar">
 						<img src="assets/img/samples/account-user-avatar.jpg"
 							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
@@ -149,7 +174,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="header-menu-toggle">
+				<div class="header-menu-toggle d-lg-none">
 					<div class="header-menu-toggle__inner">
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
@@ -167,16 +192,18 @@
 		<main class="site-content team-info-page" id="wrapper">
 
 
-			<div class="container container--large">
+			<div class="container container--large" style="margin-top: 4.5rem;">
 				<div class="row">
 					<div class="col-lg-7">
 						<div class="team-carousel">
 							<div class="team-carousel__content">
+
 								<div class="team-carousel__item" data-icon="team-overview">
 									<div class="row">
 										<div class="col-lg-11">
 											<h3 class="player-info-subtitle h4 text-uppercase">The Challenge Shot</h3>
 											<h2 class="player-info-title h1 text-uppercase">latest characters</h2>
+
 											<!-- <div class="row">
 												<div class="col-6 col-md-6 col-xl-4">
 													<div class="player-info-detail">
@@ -676,7 +703,7 @@
 			</div>
 
 			<!-- Seccion de personajes -->
-			<div class="team-player team-player--slider-wrapper">
+			<div class="team-player team-player--slider-wrapper" style="margin-top: 4.5rem;">
 				<div class="team-player__slider js-team-player__slider">
 
 
@@ -692,7 +719,7 @@
 								<div class="team-player__slide-meta">
 									<h4 class="team-player__slide-subtitle h6 color-primary">elite shooter</h4>
 									<h3 class="team-player__slide-title">Carvalho</h3>
-									<a href="carvalho.html" class="team-player__slide-link link-plus"></a>
+									<a href="characters/carvalho.html" class="team-player__slide-link link-plus"></a>
 								</div>
 							</div>
 						</div>
@@ -709,7 +736,7 @@
 								<div class="team-player__slide-meta">
 									<h4 class="team-player__slide-subtitle h6 color-primary">Killer</h4>
 									<h3 class="team-player__slide-title">Santos</h3>
-									<a href="santos.html" class="team-player__slide-link link-plus"></a>
+									<a href="characters/santos.html" class="team-player__slide-link link-plus"></a>
 								</div>
 							</div>
 						</div>
@@ -727,7 +754,7 @@
 									<h4 class="team-player__slide-subtitle h6 color-primary">gangster
 									</h4>
 									<h3 class="team-player__slide-title">Polka</h3>
-									<a href="polka.html" class="team-player__slide-link link-plus"></a>
+									<a href="characters/polka.html" class="team-player__slide-link link-plus"></a>
 								</div>
 							</div>
 						</div>
@@ -744,13 +771,12 @@
 								<div class="team-player__slide-meta">
 									<h4 class="team-player__slide-subtitle h6 color-primary">elite soldier</h4>
 									<h3 class="team-player__slide-title">Bastian</h3>
-									<a href="bastian.html" class="team-player__slide-link link-plus"></a>
+									<a href="characters/bastian.html" class="team-player__slide-link link-plus"></a>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<!-- Empty Slide -->
 
 					<!-- Empty Slide / End -->
 				</div>
@@ -763,7 +789,7 @@
 		<!-- Overlay / End -->
 
 		<!-- Search Panel -->
-		<div class="search-panel">
+		<div class="search-panel d-none">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
 					<input type="text" class="form-control" value="" placeholder="What are you looking for...?">
@@ -773,8 +799,8 @@
 		</div>
 		<!-- Search Panel / End -->
 		<!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+		<div class="menu-panel d-lg-none">
+			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="home.html">
 						Home
@@ -799,7 +825,7 @@
 					</div>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="home.html">
+					<a class="mobile-bar-item__header" href="blog.html">
 						Blog
 					</a>
 				</li>
@@ -814,10 +840,10 @@
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
 								<li class=""><a href="about.html">About us</a></li>
-								<li class=""><a href="objective.html">Objective</a></li>
-								<li class=""><a href="vision.html">Vision</a></li>
+								<!-- <li class=""><a href="objective.html">Objective</a></li>
+								<li class=""><a href="vision.html">Vision</a></li> -->
 								<li class=""><a href="support.html">Support</a></li>
-								<li class=""><a href="faq.html">Faq</a></li>
+								<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 								<li class=""><a href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
@@ -826,7 +852,7 @@
 				</li>
 
 			</ul>
-			<div class="menu-panel__content d-none d-md-flex">
+			<div class="menu-panel__content d-none d-lg-flex">
 				<div class="menu-panel__navigation">
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
@@ -949,11 +975,8 @@
 
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
-				<svg role="img" class="df-icon df-icon--preloader-arcade">
-					<use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
-				</svg>
+			<div class="preloader-inner fadeInUp position-relative">
+				<div class="imgPre"></div>
 			</div>
 		</div>
 	</div>

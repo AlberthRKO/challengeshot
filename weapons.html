@@ -59,17 +59,17 @@
 
 </head>
 
-<body class="site-layout--horizontal preloader-is--active">
+<body class="site-layout--horizontal preloader-is--active preloader--no-transform">
 
 	<div class="site-wrapper">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--bottom">
+		<header id="header" class="site-header site-header--top">
 
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="Necromancers"></a>
+				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="The Challenge Shot"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 
@@ -77,11 +77,11 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class=""><a href="home.html">Home</a></li>
-					<li class="active">
+					<li class="active"><a href="home.html">Home</a></li>
+					<li class="">
 						<a href="#">Game</a>
 						<ul class="main-nav__sub">
-							<li class="active"><a href="weapons.html">Weapons</a></li>
+							<li class=""><a href="weapons.html">Weapons</a></li>
 							<li class=""><a href="characters.html">Characters</a></li>
 							<li class=""><a href="lastPerson.html">Latest Characters</a></li>
 						</ul>
@@ -90,10 +90,10 @@
 					<li class=""><a href="#">Features</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="about.html">About us</a></li>
-							<li class=""><a href="objective.html">Objective</a></li>
-							<li class=""><a href="vision.html">Vision</a></li>
+							<!-- <li class=""><a href="objective.html">Objective</a></li>
+							<li class=""><a href="vision.html">Vision</a></li> -->
 							<li class=""><a href="support.html">Support</a></li>
-							<li class=""><a href="faq.html">Faq</a></li>
+							<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 							<li class=""><a href="contact.html">Contact</a></li>
 						</ul>
 					</li>
@@ -104,7 +104,7 @@
 			<!-- Header Actions -->
 			<div class="header-actions">
 
-				<div class="header-social-toggle d-none d-md-block">
+				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
 						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
 					</svg>
@@ -119,7 +119,7 @@
 									class="link-subtitle">Facebook</span>Necrogame</a></li>
 					</ul>
 				</div>
-				<div class="header-search-toggle">
+				<div class="header-search-toggle pr-lg-4">
 					<svg role="img" class="df-icon df-icon--search">
 						<use xlink:href="assets/img/necromancers.svg#search" />
 					</svg>
@@ -127,7 +127,22 @@
 						<use xlink:href="assets/img/necromancers.svg#search-close" />
 					</svg>
 				</div>
-				<div class="header-account hide">
+
+				<!-- seccion de busqueda -->
+				<!-- Search Panel -->
+				<div class="search-panel mx-auto">
+					<div class="search-panel__content">
+						<form action="#" id="header-search-form" class="search-form search-form--header">
+							<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+						</form>
+						<span class="d-none">Write what you are looking for, choose the filters and press enter to begin
+							your
+							search!</span>
+					</div>
+				</div>
+
+
+				<div class="header-account d-none hide">
 					<div class="header-account__avatar">
 						<img src="assets/img/samples/account-user-avatar.jpg"
 							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
@@ -149,7 +164,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="header-menu-toggle">
+				<div class="header-menu-toggle d-lg-none">
 					<div class="header-menu-toggle__inner">
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
@@ -185,7 +200,7 @@
 						</button>
 					</li>
 					<li>
-						<button class="btn " data-filter=".stream-2">
+						<button class="btn" data-filter=".stream-2">
 							<img src="assets/img/armasChallenge/portadas/pistola4.jpg" alt="">
 						</button>
 					</li>
@@ -247,8 +262,8 @@
 						<div class="post__excerpt mt-2">
 							Short firearm designed to be aimed and fired with one hand
 							<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -282,8 +297,8 @@
 						<div class="post__excerpt mt-2">
 							Pistol with a high clip size, but lacks in power. Great for close range.
 							<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -317,8 +332,8 @@
 						<div class="post__excerpt mt-2">
 							Slow-firing pistol that packs a punch, even across long distances.
 							<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -353,8 +368,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							Allows two single shots to be fired in quick succession or simultaneously. <br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -387,8 +402,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							Use a shotgun to quickly decimate your nearby opponents. <br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -422,8 +437,8 @@
 						<div class="post__excerpt mt-2">
 							You will most likely be punished heavily if you miss, due to the fact that it is a single
 							fire weapon. <br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -458,8 +473,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							With a clip size of 100, it"s amazingly light. Only available in airdrops. <br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -493,8 +508,8 @@
 						<div class="post__excerpt mt-2">
 							Outshines other submachine guns in terms of stability, but loses its effectiveness over far
 							distances. <br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -527,8 +542,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							Stable submachine gun perfect for new users. <br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -562,8 +577,8 @@
 						<div class="post__excerpt mt-2">
 							It"s amazing how stable this submachine gun is despite its insane rate of fire. Extremely
 							powerful in the short range.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -599,8 +614,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							A well balanced rifle suitable for all combat situations.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -633,8 +648,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							High damage and requires skill to control.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -669,8 +684,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							M24 is a light sniper rifle that has high mobility and fast firing rate.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -703,8 +718,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							High damage sniper rifle with a long reload time.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -737,8 +752,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							The anti-vehicle sniper rifle has a lot of extra penetrating damage.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -774,8 +789,8 @@
 						</div>
 						<div class="post__excerpt mt-2">
 							Flush enemies out from their cover with this mighty throwable.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -810,8 +825,8 @@
 							ignites the flammable substances contained in the bottle and spreads the flames as the fuel
 							burns.
 							.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -845,8 +860,8 @@
 						<div class="post__excerpt mt-2">
 							Grenade launcher with mid-sized magazine. It has a low rate of fire but, comes with insane
 							fire power.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -880,8 +895,8 @@
 						<div class="post__excerpt mt-2">
 							s one of two 40mm grenade launchers capable of firing Pike missiles without
 							modification.<br>
-							<span class="font-weight-bold color-warning text-uppercase">accessories</span>
-							<div class="d-flex">
+							<span class="font-weight-bold color-warning text-uppercase d-none">accessories</span>
+							<div class="d-none">
 								<div class="d-flex flex-column justify-content-center align-items-center"><img
 										src="assets/img/accesorios/foregrip.2a8425a.png" width="50" alt="">
 									<span>Cartucho</span>
@@ -905,7 +920,7 @@
 		<!-- Overlay / End -->
 
 		<!-- Search Panel -->
-		<div class="search-panel">
+		<div class="search-panel d-none">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
 					<input type="text" class="form-control" value="" placeholder="What are you looking for...?">
@@ -915,8 +930,8 @@
 		</div>
 		<!-- Search Panel / End -->
 		<!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+		<div class="menu-panel d-lg-none">
+			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="home.html">
 						Home
@@ -941,7 +956,7 @@
 					</div>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="home.html">
+					<a class="mobile-bar-item__header" href="blog.html">
 						Blog
 					</a>
 				</li>
@@ -956,10 +971,10 @@
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
 								<li class=""><a href="about.html">About us</a></li>
-								<li class=""><a href="objective.html">Objective</a></li>
-								<li class=""><a href="vision.html">Vision</a></li>
+								<!-- <li class=""><a href="objective.html">Objective</a></li>
+								<li class=""><a href="vision.html">Vision</a></li> -->
 								<li class=""><a href="support.html">Support</a></li>
-								<li class=""><a href="faq.html">Faq</a></li>
+								<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 								<li class=""><a href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
@@ -968,7 +983,7 @@
 				</li>
 
 			</ul>
-			<div class="menu-panel__content d-none d-md-flex">
+			<div class="menu-panel__content d-none d-lg-flex">
 				<div class="menu-panel__navigation">
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
@@ -1091,11 +1106,8 @@
 
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
-				<svg role="img" class="df-icon df-icon--preloader-arcade">
-					<use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
-				</svg>
+			<div class="preloader-inner fadeInUp position-relative">
+				<div class="imgPre"></div>
 			</div>
 		</div>
 	</div>

@@ -5,7 +5,7 @@
 
 	<!-- Basic Page Needs
 	================================================== -->
-	<title>About - The Challlenge Shot</title>
+	<title>About Us - The Challlenge Shot</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="The Challenge Shot Game Shooter">
@@ -16,13 +16,13 @@
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@thechallengeshot" />
-	<meta name="twitter:title" content="About - The Challenge Shot" />
+	<meta name="twitter:title" content="About Us - The Challenge Shot" />
 	<meta name="twitter:url" content="https://thechallengeshot.com/" />
 	<meta name="twitter:description"
 		content="Challenge Shot is a game with a confrontation narrative between shock troops versus terrorists, being possible to create clans within these two categories and participate in rounds of competition between them." />
 	<meta name="twitter:image" content="https://thechallengeshot.com/assets/img/logo/logoIcon.png" />
 	<meta property="og:site_name" content="The Challenge Shot" />
-	<meta property="og:title" content="About - The Challenge Shot" />
+	<meta property="og:title" content="About Us - The Challenge Shot" />
 	<meta property="og:description"
 		content="Challenge Shot is a game with a confrontation narrative between shock troops versus terrorists, being possible to create clans within these two categories and participate in rounds of competition between them." />
 	<meta property="og:image" itemprop="image" content="https://thechallengeshot.com/assets/img/logo/logoIcon.png" />
@@ -59,17 +59,17 @@
 
 </head>
 
-<body class="preloader-is--active ">
+<body class="preloader-is--active preloader--no-transform">
 
 	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--bottom">
+		<header id="header" class="site-header site-header--top">
 
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="Necromancers"></a>
+				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="The Challenge Shoot"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 
@@ -90,10 +90,10 @@
 					<li class="active"><a href="#">Features</a>
 						<ul class="main-nav__sub">
 							<li class="active"><a href="about.html">About us</a></li>
-							<li class=""><a href="objective.html">Objective</a></li>
-							<li class=""><a href="vision.html">Vision</a></li>
+							<!-- <li class=""><a href="objective.html">Objective</a></li>
+							<li class=""><a href="vision.html">Vision</a></li> -->
 							<li class=""><a href="support.html">Support</a></li>
-							<li class=""><a href="faq.html">Faq</a></li>
+							<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 							<li class=""><a href="contact.html">Contact</a></li>
 						</ul>
 					</li>
@@ -104,7 +104,7 @@
 			<!-- Header Actions -->
 			<div class="header-actions">
 
-				<div class="header-social-toggle d-none d-md-block">
+				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
 						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
 					</svg>
@@ -119,7 +119,7 @@
 									class="link-subtitle">Facebook</span>Necrogame</a></li>
 					</ul>
 				</div>
-				<div class="header-search-toggle">
+				<div class="header-search-toggle pr-lg-4">
 					<svg role="img" class="df-icon df-icon--search">
 						<use xlink:href="assets/img/necromancers.svg#search" />
 					</svg>
@@ -127,7 +127,20 @@
 						<use xlink:href="assets/img/necromancers.svg#search-close" />
 					</svg>
 				</div>
-				<div class="header-account hide">
+
+				<!-- Search Panel -->
+				<div class="search-panel mx-auto">
+					<div class="search-panel__content">
+						<form action="#" id="header-search-form" class="search-form search-form--header">
+							<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+						</form>
+						<span class="d-none">Write what you are looking for, choose the filters and press enter to begin
+							your
+							search!</span>
+					</div>
+				</div>
+
+				<div class="header-account d-none hide">
 					<div class="header-account__avatar">
 						<img src="assets/img/samples/account-user-avatar.jpg"
 							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
@@ -149,7 +162,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="header-menu-toggle">
+				<div class="header-menu-toggle d-lg-none">
 					<div class="header-menu-toggle__inner">
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
@@ -166,8 +179,11 @@
 		<main class="site-content" id="wrapper">
 			<div class="site-content__inner">
 				<div class="site-content__holder">
+
+
+
 					<figure class="page-thumbnail page-thumbnail--default">
-						<img class="page-bg-logo" src="assets/img/logo/logoBanner.png" alt="">
+						<img class="page-bg-logo px-3" src="assets/img/logo/logoBanner.png" alt="">
 						<!-- Decoration -->
 						<div class="ncr-page-decor">
 							<div class="ncr-page-decor__layer-1">
@@ -183,105 +199,369 @@
 						</div>
 						<!-- Decoration / End -->
 					</figure>
-					<h1 class="page-title h3">About Us</h1>
-					<div class="page-content">
-						<p>
-							THE CHALLENGE SHOT – GAME MULTIPLAYER of <span
-								class="text-warning font-weight-bold text-uppercase">Global
-								Vision
-								Entertainment Mobile Games</span>
-						</p>
-						<div class="spacer"></div>
-						<div class="world-map">
-							<div class="world-map-team world-map-team--left world-map-team--one">
-								<figure role="group">
-									<figure class="world-map-team__logo" role="group">
-										<img src="assets/img/logo/logo1.png"
-											srcset="assets/img/samples/logo-necromancers-32@2x.png 2x"
-											alt="Necromancers Logo">
+					<div class="section-about">
+						<h1 class="page-title h3">About Us <span class="text-danger">- The Challenge Shoot</span>
+						</h1>
+						<div class="page-content">
+							<p>
+								THE CHALLENGE SHOT – GAME MULTIPLAYER of <span
+									class="color-danger font-weight-bold text-uppercase">Global
+									Vision
+									Entertainment Mobile Games</span>
+							</p>
+							<div class="spacer"></div>
+							<div class="world-map">
+								<div class="world-map-team world-map-team--left world-map-team--one">
+									<figure role="group">
+										<figure class="world-map-team__logo" role="group">
+											<img src="assets/img/logo/logo1.png"
+												srcset="assets/img/samples/logo-necromancers-32@2x.png 2x"
+												alt="Necromancers Logo">
+										</figure>
+										<figcaption>
+											<div class="world-map-team__name">The Challenge Shot</div>
+											<div class="world-map-team__country">United States</div>
+										</figcaption>
 									</figure>
-									<figcaption>
-										<div class="world-map-team__name">The Challenge Shot</div>
-										<div class="world-map-team__country">United States</div>
-									</figcaption>
-								</figure>
-								<div class="world-map-team__anchor"></div>
-							</div>
-							<div class="world-map-team world-map-team--right world-map-team--two">
-								<figure role="group">
-									<figure class="world-map-team__logo" role="group">
-										<img src="assets/img/logo/logo1.png"
-											srcset="assets/img/samples/logo-necromancers-32@2x.png 2x"
-											alt="Necromancers Logo">
+									<div class="world-map-team__anchor"></div>
+								</div>
+								<div class="world-map-team world-map-team--right world-map-team--two">
+									<figure role="group">
+										<figure class="world-map-team__logo" role="group">
+											<img src="assets/img/logo/logo1.png"
+												srcset="assets/img/samples/logo-necromancers-32@2x.png 2x"
+												alt="Necromancers Logo">
+										</figure>
+										<figcaption>
+											<div class="world-map-team__name">The Challenge Shot</div>
+											<div class="world-map-team__country">Australia (Soon!)</div>
+										</figcaption>
 									</figure>
-									<figcaption>
-										<div class="world-map-team__name">The Challenge Shot</div>
-										<div class="world-map-team__country">Australia (Soon!)</div>
-									</figcaption>
-								</figure>
-								<div class="world-map-team__anchor"></div>
+									<div class="world-map-team__anchor"></div>
+								</div>
 							</div>
-						</div>
-						<div class="spacer"></div>
-						<h4>What is The Challenge Shot?</h4>
-						<div class="spacer"></div>
-						<p>
-							Challenge Shot is a game with a narrative of confrontation between shock troops versus
-							terrorists, being possible to create clans within these two categories and participate in
-							rounds of competition between them. Winning the competitions, weapons, items and skins are
-							released, making the clan stronger and ready for other disputes.
+							<div class="spacer"></div>
+							<h4>What is <span class="text-danger">The Challenge Shot?</span></h4>
+							<div class="spacer"></div>
+							<p>
+								Challenge Shot is a game with a narrative of confrontation between shock troops versus
+								terrorists, being possible to create clans within these two categories and participate
+								in
+								rounds of competition between them. Winning the competitions, weapons, items and skins
+								are
+								released, making the clan stronger and ready for other disputes.
 
-						</p>
-						<div class="spacer"></div>
-						<div class="row">
-							<div class="col-md-4 mb-4 mb-md-0">
-								<div class="counter">
-									<div class="counter__icon counter__icon--left">
-										<svg role="img" class="df-icon df-icon--joystick">
-											<use xlink:href="assets/img/necromancers.svg#joystick" />
-										</svg>
+							</p>
+							<div class="spacer"></div>
+							<div class="row">
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--joystick">
+												<use xlink:href="assets/img/necromancers.svg#joystick" />
+											</svg>
+										</div>
+										<div class="counter__number">979</div>
+										<div class="counter__label">Matches</div>
 									</div>
-									<div class="counter__number">979</div>
-									<div class="counter__label">Matches</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--trophy">
+												<use xlink:href="assets/img/necromancers.svg#trophy" />
+											</svg>
+										</div>
+										<div class="counter__number">34</div>
+										<div class="counter__label">Trophies</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--chart">
+												<use xlink:href="assets/img/necromancers.svg#chart" />
+											</svg>
+										</div>
+										<div class="counter__number">82.1</div>
+										<div class="counter__label">Win Ratio</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 mb-4 mb-md-0">
-								<div class="counter">
-									<div class="counter__icon counter__icon--left">
-										<svg role="img" class="df-icon df-icon--trophy">
-											<use xlink:href="assets/img/necromancers.svg#trophy" />
-										</svg>
+							<div class="spacer"></div>
+							<p>My Elite Force clan is already formed with players from all over the world, opening the
+								dispute for all competitors who want to play a game along the lines of Counter Strike,
+								but
+								who want to try a new game. The idea is to be a fun and cooperative game, bringing
+								friends
+								together in disputes that span the globe.</p>
+							<figure class="d-none lightbox lightbox--video">
+								<a href="https://www.youtube.com/watch?v&#x3D;XE0fU9PCrWE" class="mp_iframe">
+									<img src="assets/img/samples/features-about-us-img-01.jpg" alt="">
+									<span class="lightbox__icon">
+										<!---->
+									</span>
+								</a>
+							</figure>
+						</div>
+					</div>
+
+					<!-- section de objetivo -->
+					<!-- Post -->
+					<article class="post post--single mt-5">
+
+						<div class="post__header">
+							<div class="post__cats h6">
+								<span class="color-danger">Objective</span>
+							</div>
+							<h2 class="post__title h3">Objective The Challenge Shot</h2>
+							<!-- <div class="post__meta">
+								<span class="meta-item meta-item--date">August 15th, 2018</span>
+							</div> -->
+						</div>
+						<div class="post__body">
+							<figure>
+								<img src="assets/img/blog/blog1.jpg" alt="">
+								<!-- <figcaption>This is "Stormy" the last character that was introduced to the game
+								</figcaption> -->
+							</figure>
+							<p>
+								The consolidation of e-sports is another point that leads many players to join the fever
+								of
+								multiplayer games, one of the biggest is Counter Strike, especially CS:GO, being a
+								success of championships and yielding many awards to competitors.
+
+
+							</p>
+							<div class="d-none row mb-4">
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--joystick">
+												<use xlink:href="assets/img/necromancers.svg#joystick" />
+											</svg>
+										</div>
+										<div class="counter__number">979</div>
+										<div class="counter__label">Matches</div>
 									</div>
-									<div class="counter__number">34</div>
-									<div class="counter__label">Trophies</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--trophy">
+												<use xlink:href="assets/img/necromancers.svg#trophy" />
+											</svg>
+										</div>
+										<div class="counter__number">34</div>
+										<div class="counter__label">Trophies</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--chart">
+												<use xlink:href="assets/img/necromancers.svg#chart" />
+											</svg>
+										</div>
+										<div class="counter__number">82.1</div>
+										<div class="counter__label">Win Ratio</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="counter">
-									<div class="counter__icon counter__icon--left">
-										<svg role="img" class="df-icon df-icon--chart">
-											<use xlink:href="assets/img/necromancers.svg#chart" />
-										</svg>
+							<p>
+								Aware of this market that merges fun and community, I'm launching Challenge Shot, a
+								multiplayer game within the Blockchain Ecosystem, a corporate ecosystem that houses
+								Global Vision, developer of the Challenge Shot game.
+							</p>
+						</div>
+					</article>
+					<!-- Post / End -->
+					<!-- Seccion de vision -->
+					<!-- Post -->
+					<article class="post post--single mt-5">
+
+						<div class="post__header">
+							<div class="post__cats h6">
+								<span class="color-danger">Vision</span>
+							</div>
+							<h2 class="post__title h3">Vision The Challenge Shot</h2>
+							<!-- <div class="post__meta">
+								<span class="meta-item meta-item--date">August 15th, 2018</span>
+							</div> -->
+						</div>
+						<div class="post__body">
+							<figure>
+								<img src="assets/img/objetivos/garena-free-fire_1280x720_xtrafondos.com.jpg" alt="">
+								<!-- <figcaption>This is "Stormy" the last character that was introduced to the game
+								</figcaption> -->
+							</figure>
+							<p class="mb-4">
+
+								First-person multiplayer shooters are a style that is very popular with gamers all over
+								the world. As it involves a dispute between friends, challenges, demonstration of
+								skills, agility and strategies to win, this type of game is a real attraction for
+								players who enjoy electronic competitions.
+							</p>
+							<div class="row mb-4 mt-3">
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--joystick">
+												<use xlink:href="assets/img/necromancers.svg#joystick" />
+											</svg>
+										</div>
+										<div class="counter__number">979</div>
+										<div class="counter__label">Matches</div>
 									</div>
-									<div class="counter__number">82.1</div>
-									<div class="counter__label">Win Ratio</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--trophy">
+												<use xlink:href="assets/img/necromancers.svg#trophy" />
+											</svg>
+										</div>
+										<div class="counter__number">34</div>
+										<div class="counter__label">Trophies</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="counter">
+										<div class="counter__icon counter__icon--left">
+											<svg role="img" class="df-icon df-icon--chart">
+												<use xlink:href="assets/img/necromancers.svg#chart" />
+											</svg>
+										</div>
+										<div class="counter__number">82.1</div>
+										<div class="counter__label">Win Ratio</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</article>
+					<!-- Post / End -->
+
+					<ul class="post__sharing">
+						<li class="post__sharing-item post__sharing-item--menu"><a href="home.html"><i>&nbsp;</i></a>
+						</li>
+						<li class="post__sharing-item"><a href="https://www.facebook.com/danfisher.dev/"></a></li>
+						<li class="post__sharing-item"><a href="https://discord.gg"></a></li>
+
+					</ul>
+
+					<div class="section-faq mt-5">
+						<h1 class="page-title h3">Faqs</h1>
+						<div class="page-content">
+							<div class="accordion" id="accordionFaqs">
+								<div class="accordion-item">
+									<div class="accordion-item__header" id="headingOne">
+										<button class="accordion-item__link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+											aria-controls="collapseOne">
+											How many teams do you currently have?
+											<span class="accordion-item__icon">&nbsp;</span>
+										</button>
+									</div>
+
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+										data-parent="#accordionFaqs">
+										<div class="accordion-item__body">
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+											doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+											veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+											ipsam
+											voluptatem quia voluptas
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-item__header" id="headingTwo">
+										<button class="accordion-item__link" type="button" data-toggle="collapse"
+											data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+											Can I join one of your teams?
+											<span class="accordion-item__icon">&nbsp;</span>
+										</button>
+									</div>
+
+									<div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+										data-parent="#accordionFaqs">
+										<div class="accordion-item__body">
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+											doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+											veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+											ipsam
+											voluptatem quia voluptas
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-item__header" id="headingThree">
+										<button class="accordion-item__link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+											aria-controls="collapseThree">
+											How can I do if I wanna become one of your sponsors?
+											<span class="accordion-item__icon">&nbsp;</span>
+										</button>
+									</div>
+
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+										data-parent="#accordionFaqs">
+										<div class="accordion-item__body">
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+											doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+											veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+											ipsam
+											voluptatem quia voluptas
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-item__header" id="headingFour">
+										<button class="accordion-item__link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+											aria-controls="collapseFour">
+											Do you have plans to create new gaming teams?
+											<span class="accordion-item__icon">&nbsp;</span>
+										</button>
+									</div>
+
+									<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+										data-parent="#accordionFaqs">
+										<div class="accordion-item__body">
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+											doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+											veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+											ipsam
+											voluptatem quia voluptas
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<div class="accordion-item__header" id="headingFive">
+										<button class="accordion-item__link collapsed" type="button"
+											data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+											aria-controls="collapseFive">
+											How can I order your merchandise?
+											<span class="accordion-item__icon">&nbsp;</span>
+										</button>
+									</div>
+
+									<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+										data-parent="#accordionFaqs">
+										<div class="accordion-item__body">
+											Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+											doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+											veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+											ipsam
+											voluptatem quia voluptas
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="spacer"></div>
-						<p>My Elite Force clan is already formed with players from all over the world, opening the
-							dispute for all competitors who want to play a game along the lines of Counter Strike, but
-							who want to try a new game. The idea is to be a fun and cooperative game, bringing friends
-							together in disputes that span the globe.</p>
-						<figure class="d-none lightbox lightbox--video">
-							<a href="https://www.youtube.com/watch?v&#x3D;XE0fU9PCrWE" class="mp_iframe">
-								<img src="assets/img/samples/features-about-us-img-01.jpg" alt="">
-								<span class="lightbox__icon">
-									<!---->
-								</span>
-							</a>
-						</figure>
 					</div>
+
 				</div>
 			</div>
 		</main>
@@ -292,7 +572,7 @@
 		<!-- Overlay / End -->
 
 		<!-- Search Panel -->
-		<div class="search-panel">
+		<div class="search-panel d-none">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
 					<input type="text" class="form-control" value="" placeholder="What are you looking for...?">
@@ -302,8 +582,8 @@
 		</div>
 		<!-- Search Panel / End -->
 		<!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+		<div class="menu-panel d-lg-none">
+			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="home.html">
 						Home
@@ -328,7 +608,7 @@
 					</div>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="home.html">
+					<a class="mobile-bar-item__header" href="blog.html">
 						Blog
 					</a>
 				</li>
@@ -343,8 +623,8 @@
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
 								<li class="active"><a href="about.html">About us</a></li>
-								<li class=""><a href="objective.html">Objective</a></li>
-								<li class=""><a href="vision.html">Vision</a></li>
+								<!-- <li class=""><a href="objective.html">Objective</a></li>
+								<li class=""><a href="vision.html">Vision</a></li> -->
 								<li class=""><a href="support.html">Support</a></li>
 								<li class=""><a href="faq.html">Faq</a></li>
 								<li class=""><a href="contact.html">Contact</a></li>
@@ -355,7 +635,7 @@
 				</li>
 
 			</ul>
-			<div class="menu-panel__content d-none d-md-flex">
+			<div class="menu-panel__content d-none d-lg-flex">
 				<div class="menu-panel__navigation">
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
@@ -476,13 +756,13 @@
 
 	</div>
 
+
+
+
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
-				<svg role="img" class="df-icon df-icon--preloader-arcade">
-					<use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
-				</svg>
+			<div class="preloader-inner fadeInUp position-relative">
+				<div class="imgPre"></div>
 			</div>
 		</div>
 	</div>

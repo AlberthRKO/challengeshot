@@ -58,17 +58,17 @@
 
 </head>
 
-<body class="preloader-is--active bg-image bg-fixed bg--texture-01 bg--dotted-3x3">
+<body class="preloader-is--active preloader--no-transform bg-image bg-fixed bg--texture-01 bg--dotted-3x3">
 
 	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
-		<header id="header" class="site-header site-header--bottom">
+		<header id="header" class="site-header site-header--top">
 
 			<!-- Logo - Image Based -->
 			<div class="header-logo header-logo--img">
-				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="Necromancers"></a>
+				<a href="index.html"><img src="assets/img/logo/logo1.png" alt="The Challenge Shoot"></a>
 			</div>
 			<!-- Logo - Image Based / End -->
 
@@ -89,10 +89,10 @@
 					<li class=""><a href="#">Features</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="about.html">About us</a></li>
-							<li class=""><a href="objective.html">Objective</a></li>
-							<li class=""><a href="vision.html">Vision</a></li>
+							<!-- <li class=""><a href="objective.html">Objective</a></li>
+							<li class=""><a href="vision.html">Vision</a></li> -->
 							<li class=""><a href="support.html">Support</a></li>
-							<li class=""><a href="faq.html">Faq</a></li>
+							<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 							<li class=""><a href="contact.html">Contact</a></li>
 						</ul>
 					</li>
@@ -103,7 +103,7 @@
 			<!-- Header Actions -->
 			<div class="header-actions">
 
-				<div class="header-social-toggle d-none d-md-block">
+				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
 						<use xlink:href="assets/img/necromancers.svg#thumb-up" />
 					</svg>
@@ -118,7 +118,7 @@
 									class="link-subtitle">Facebook</span>Necrogame</a></li>
 					</ul>
 				</div>
-				<div class="header-search-toggle">
+				<div class="header-search-toggle pr-lg-4">
 					<svg role="img" class="df-icon df-icon--search">
 						<use xlink:href="assets/img/necromancers.svg#search" />
 					</svg>
@@ -126,7 +126,20 @@
 						<use xlink:href="assets/img/necromancers.svg#search-close" />
 					</svg>
 				</div>
-				<div class="header-account hide">
+
+				<!-- Search Panel -->
+				<div class="search-panel mx-auto">
+					<div class="search-panel__content">
+						<form action="#" id="header-search-form" class="search-form search-form--header">
+							<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
+						</form>
+						<span class="d-none">Write what you are looking for, choose the filters and press enter to begin
+							your
+							search!</span>
+					</div>
+				</div>
+
+				<div class="header-account d-none hide">
 					<div class="header-account__avatar">
 						<img src="assets/img/samples/account-user-avatar.jpg"
 							srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
@@ -148,7 +161,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="header-menu-toggle">
+				<div class="header-menu-toggle d-lg-none">
 					<div class="header-menu-toggle__inner">
 						<span>&nbsp;</span>
 						<span>&nbsp;</span>
@@ -165,7 +178,7 @@
 		================================================== -->
 		<main class="site-content player-info-page" id="wrapper">
 			<div class="container container--large">
-				<div class="team-carousel">
+				<div class="team-carousel" style="margin-top: 4.5rem;">
 					<div class="team-carousel__content">
 
 						<!-- Section: Lineups -->
@@ -679,7 +692,7 @@
 
 					</div>
 				</div>
-				<div class="team-player">
+				<div class="team-player" style="margin-top: 4.5rem;">
 					<div class="team-player__photo team-player__photo2">
 						<img src="assets/img/armas/ak-47.png" alt="">
 					</div>
@@ -708,7 +721,7 @@
 		<!-- Overlay / End -->
 
 		<!-- Search Panel -->
-		<div class="search-panel">
+		<div class="search-panel d-none">
 			<div class="search-panel__content">
 				<form action="#" id="header-search-form" class="search-form search-form--header">
 					<input type="text" class="form-control" value="" placeholder="What are you looking for...?">
@@ -718,8 +731,8 @@
 		</div>
 		<!-- Search Panel / End -->
 		<!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+		<div class="menu-panel d-lg-none">
+			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
 				<li class="mobile-bar-item">
 					<a class="mobile-bar-item__header" href="home.html">
 						Home
@@ -744,7 +757,7 @@
 					</div>
 				</li>
 				<li class="mobile-bar-item">
-					<a class="mobile-bar-item__header" href="home.html">
+					<a class="mobile-bar-item__header" href="blog.html">
 						Blog
 					</a>
 				</li>
@@ -759,10 +772,10 @@
 						<nav class="mobile-nav">
 							<ul class="mobile-nav__list">
 								<li class=""><a href="about.html">About us</a></li>
-								<li class=""><a href="objective.html">Objective</a></li>
-								<li class=""><a href="vision.html">Vision</a></li>
+								<!-- <li class=""><a href="objective.html">Objective</a></li>
+								<li class=""><a href="vision.html">Vision</a></li> -->
 								<li class=""><a href="support.html">Support</a></li>
-								<li class=""><a href="faq.html">Faq</a></li>
+								<!-- <li class=""><a href="faq.html">Faq</a></li> -->
 								<li class=""><a href="contact.html">Contact</a></li>
 							</ul>
 						</nav>
@@ -771,7 +784,7 @@
 				</li>
 
 			</ul>
-			<div class="menu-panel__content d-none d-md-flex">
+			<div class="menu-panel__content d-none d-lg-flex">
 				<div class="menu-panel__navigation">
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
@@ -894,11 +907,8 @@
 
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
-				<svg role="img" class="df-icon df-icon--preloader-arcade">
-					<use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
-				</svg>
+			<div class="preloader-inner fadeInUp position-relative">
+				<div class="imgPre"></div>
 			</div>
 		</div>
 	</div>
