@@ -16,20 +16,18 @@
 
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@thechallengeshot" />
-	<meta name="twitter:title" content="The Challenge Shot" />
+	<meta name="twitter:title" content="Maps - The Challenge Shot" />
 	<meta name="twitter:url" content="https://thechallengeshot.com/" />
 	<meta name="twitter:description"
 		content="Challenge Shot is a game with a confrontation narrative between shock troops versus terrorists, being possible to create clans within these two categories and participate in rounds of competition between them." />
 	<meta name="twitter:image" content="https://thechallengeshot.com/assets/img/logo/logoIcon.png" />
 	<meta property="og:site_name" content="The Challenge Shot" />
-	<meta property="og:title" content="The Challenge Shot" />
+	<meta property="og:title" content="Maps - The Challenge Shot" />
 	<meta property="og:description"
 		content="Challenge Shot is a game with a confrontation narrative between shock troops versus terrorists, being possible to create clans within these two categories and participate in rounds of competition between them." />
 	<meta property="og:image" itemprop="image" content="https://thechallengeshot.com/assets/img/logo/logoIcon.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://thechallengeshot.com/" />
-
-
 
 	<!-- Favicons
 	================================================== -->
@@ -61,9 +59,11 @@
 
 </head>
 
-<body class="site-layout--horizontal preloader-is--active preloader--no-transform">
+<body class="preloader-is--active preloader--no-transform bg-image bg-fixed bg--dotted-3x3"
+	style="background-color: #151720;">
 
-	<div class="site-wrapper">
+
+	<div class="site-wrapper site-layout--default">
 
 		<!-- Header
 		================================================== -->
@@ -79,13 +79,13 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="active"><a href="home.html">Home</a></li>
-					<li class="">
+					<li class=""><a href="home.html">Home</a></li>
+					<li class="active">
 						<a href="#">Game</a>
 						<ul class="main-nav__sub">
 							<li class=""><a href="weapons.html">Weapons</a></li>
 							<li class=""><a href="characters.html">Characters</a></li>
-							<li class=""><a href="maps.html">Maps</a></li>
+							<li class="active"><a href="maps.html">Maps</a></li>
 							<li class=""><a href="lastPerson.html">Latest Characters</a></li>
 						</ul>
 					</li>
@@ -106,6 +106,66 @@
 
 			<!-- Header Actions -->
 			<div class="header-actions">
+				<div class="header-pagination mr-0">
+					<a href="#"
+						class="header-scroll-arrow header-scroll-arrow--left js-team-selection-slider__nav-prev">
+						<svg role="img" class="df-icon df-icon--left-arrow">
+							<use xlink:href="assets/img/necromancers.svg#left-arrow" />
+						</svg>
+					</a>
+					<div class="header-team-toggle d-none">
+						<svg role="img" class="df-icon df-icon--team-shield">
+							<use xlink:href="assets/img/necromancers.svg#team-shield" />
+						</svg>
+						<span class="header-team-toggle__plus">&nbsp;</span>
+						<ul class="header-team-nav js-header-team-nav">
+
+							<li class="header-team-nav__item header-team-nav__item--category-1">
+								<figure class="header-team-nav__thumb">
+									<img src="assets/img/team-selection-logo-01-70.png" alt="">
+								</figure>
+								<div class="header-team-nav__holder">
+									<h5 class="header-team-nav__subtitle">Necromancers</h5>
+									<h4 class="header-team-nav__title">Xenowatch</h4>
+								</div>
+							</li>
+							<li class="header-team-nav__item header-team-nav__item--category-2">
+								<figure class="header-team-nav__thumb">
+									<img src="assets/img/team-selection-logo-02-70.png" alt="">
+								</figure>
+								<div class="header-team-nav__holder">
+									<h5 class="header-team-nav__subtitle">Necromancers</h5>
+									<h4 class="header-team-nav__title">League of <span class="highlight">Heroes</span>
+									</h4>
+								</div>
+							</li>
+							<li class="header-team-nav__item header-team-nav__item--category-3">
+								<figure class="header-team-nav__thumb">
+									<img src="assets/img/team-selection-logo-03-70.png" alt="">
+								</figure>
+								<div class="header-team-nav__holder">
+									<h5 class="header-team-nav__subtitle">Necromancers</h5>
+									<h4 class="header-team-nav__title">Striker GO</h4>
+								</div>
+							</li>
+							<li class="header-team-nav__item header-team-nav__item--category-4">
+								<figure class="header-team-nav__thumb">
+									<img src="assets/img/team-selection-logo-04-70.png" alt="">
+								</figure>
+								<div class="header-team-nav__holder">
+									<h5 class="header-team-nav__subtitle">Necromancers</h5>
+									<h4 class="header-team-nav__title">Fortdaite</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a href="#"
+						class="header-scroll-arrow header-scroll-arrow--right js-team-selection-slider__nav-next">
+						<svg role="img" class="df-icon df-icon--right-arrow">
+							<use xlink:href="assets/img/necromancers.svg#right-arrow" />
+						</svg>
+					</a>
+				</div>
 
 				<div class="header-social-toggle d-none">
 					<svg role="img" class="df-icon df-icon--thumb-up">
@@ -179,230 +239,265 @@
 		</header>
 		<!-- Header / End -->
 
+
 		<!-- Content
 		================================================== -->
 		<main class="site-content" id="wrapper">
 
-			<!-- seccion de portada vertical -->
-			<div class="widget-area widger-area--before-loop widger-area--before-loop-home">
-				<figure class="page-thumbnail page-thumbnail--default page-thumbnail--default-home">
-					<img class="page-bg-logo px-3" src="assets/img/logo/logoBanner.png" alt="">
-					<!-- Decoration -->
-					<div class="ncr-page-decor">
-						<div class="ncr-page-decor__layer-1">
-							<div class="ncr-page-decor__layer-bg"></div>
-						</div>
-						<div class="ncr-page-decor__layer-2"></div>
-						<div class="ncr-page-decor__layer-3">
-							<div class="ncr-page-decor__layer-bg"></div>
-						</div>
-						<div class="ncr-page-decor__layer-4"></div>
-						<div class="ncr-page-decor__layer-5"></div>
-						<div class="ncr-page-decor__layer-6"></div>
-					</div>
-					<!-- Decoration / End -->
-				</figure>
-			</div>
+			<div class="team-selection-slider js-team-selection-slider">
 
-			<!-- section de content -->
-			<div class="content blog-layout--style-1">
+				<!-- Slide #0 desert -->
+				<div class="team-selection__slide team-selection__slide--category-2">
+					<div class="team-selection__slide-inner">
 
-				<article class="post has-post-thumbnail ">
-					<div class="post__thumbnail post__thumbnail-blog">
-
-						<a href="about.html"><img src="assets/img/objetivos/38280.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body content-blog d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-warning">
-									<a href="about.html">About us</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4 titulo-blog"><a href="about.html">About Us Game Shooter</a>
+						<!-- Slide Heading -->
+						<div class="team-selection__slide-heading justify-content-center justify-content-sm-start"
+							style="z-index: 50;">
+							<h5 class="team-selection__slide-subtitle text-danger mt-5">The Challengue Shoot</h5>
+							<h2 class="team-selection__slide-title text-white">
+								Desert Market
 							</h2>
+						</div>
+						<!-- Slide Heading / End -->
+
+						<!-- Slide Body -->
+						<div class="team-selection__slide-body">
+
+							<!-- Players -->
+							<div class="team-selection__slide-players">
+								<img src="assets/img/maps/Desert market.jpg" alt=""
+									class="team-selection__slide-player imagenMap">
+							</div>
+							<!-- Players / End -->
+
+							<div class="ncr-decor-wrapper d-none">
+								<div class="ncr-decor d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+								<div class="ncr-decor ncr-decor--reverse d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3"></div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+							</div>
 
 						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="about.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-				<article class="post has-post-thumbnail post__thumbnail-blog">
-					<div class="post__thumbnail">
-
-						<a href="objective.html"><img
-								src="assets/img/objetivos/garena-free-fire_1280x720_xtrafondos.com.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-success">
-									<a href="objective.html">Objective</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4"><a href="objective.html">Objective The Challenge Shot</a></h2>
-
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="objective.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-
-				<article class="post has-post-thumbnail post__thumbnail-blog">
-					<div class="post__thumbnail">
-
-						<a href="vision.html"><img src="assets/img/blog/blog3.jpg" alt=""></a>
-
+						<!-- Slide Body / End -->
 
 					</div>
-					<div class="post__body d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-success">
-									<a href="vision.html">Vision</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4"><a href="vision.html">Vision of the game</a></h2>
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="vision.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-				<article class="post has-post-thumbnail post__thumbnail-blog">
-					<div class="post__thumbnail">
-
-						<a href="support.html"><img
-								src="assets/img/objetivos/HD-wallpaper-de-videojuegos-juega-fast-fire.jpg" alt=""></a>
-
-
-					</div>
-					<div class="post__body d-flex flex-column justify-content-center">
-						<div class="post__header">
-							<ul class="post__cats list-unstyled">
-								<li class="post__cats-item color-warning">
-									<a href="support.html">Support</a>
-								</li>
-							</ul>
-							<h2 class="post__title h4"><a href="support.html">Support The Challenge Shot</a></h2>
-
-						</div>
-						<div class="post__excerpt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore,
-							pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis
-							praesentium dolore cumque ab.
-						</div>
-						<ul class="post__meta list-unstyled">
-							<li class="post__meta-item mt-3 post__meta-item--date">
-								<a class="text-danger" href="support.html">Know More</a>
-							</li>
-						</ul>
-					</div>
-				</article>
-
-			</div>
-			<!-- section swiper de personajes -->
-			<div class="widget-area widger-area--before-loop">
-				<div class="widget widget-carousel slick-slider">
-					<article class="widget-carousel__item player bg-image bg--port">
-						<div class="player__subtitle">Killer</div>
-						<h1 class="player__title h3 color-primary">Santos</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/santos.png" alt="">
-							<a href="santos.html" class="more-info-link h6 mt-n3"><span class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-					<article class="widget-carousel__item player bg-image bg--port2">
-						<div class="player__subtitle">gangster</div>
-						<h1 class="player__title h3 color-primary">Polka</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/polka.png" alt="">
-							<a href="polka.html" class="more-info-link h6 mt-n3"><span class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-					<article class="widget-carousel__item player bg-image bg--port">
-						<div class="player__subtitle">Elite Shooter</div>
-						<h1 class="player__title h3 color-primary">Carvalho</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/carvalho.png" alt="">
-							<a href="carvalho.html" class="more-info-link h6 mt-n3"><span class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-					<article class="widget-carousel__item player bg-image bg--port2">
-						<div class="player__subtitle">Elite Soldier</div>
-						<h1 class="player__title h3 color-primary">Bastian</h1>
-
-						<div class="player__thumbnail player__thumbnail-home">
-							<img src="assets/img/personajes/bastian.png" alt="">
-							<a href="characters/bastian.html" class="more-info-link h6 mt-n3"><span
-									class="add-icon"></span>More
-								info</a>
-						</div>
-					</article>
-
 				</div>
+				<!-- Slide #0 -->
+
+
+
+				<!-- Slide #2 -->
+				<div class="team-selection__slide team-selection__slide--category-5">
+					<div class="team-selection__slide-inner">
+
+						<!-- Slide Heading -->
+						<div class="team-selection__slide-heading justify-content-center justify-content-sm-start"
+							style="z-index: 50;">
+							<h5 class="team-selection__slide-subtitle text-danger mt-5">The Challengue Shoot</h5>
+							<h2 class="team-selection__slide-title text-white">
+								Neighborhood
+							</h2>
+						</div>
+						<!-- Slide Heading / End -->
+
+						<!-- Slide Body -->
+						<div class="team-selection__slide-body">
+
+							<!-- Players -->
+							<div class="team-selection__slide-players">
+								<img src="assets/img/maps/Neighborhood.jpg" alt=""
+									class="team-selection__slide-player imagenMap">
+							</div>
+							<!-- Players / End -->
+
+							<div class="ncr-decor-wrapper d-none">
+								<div class="ncr-decor d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+								<div class="ncr-decor ncr-decor--reverse d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3"></div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Slide Body / End -->
+
+					</div>
+				</div>
+				<!-- Slide #2 -->
+				<!-- Slide #2 -->
+				<div class="team-selection__slide team-selection__slide--category-6">
+					<div class="team-selection__slide-inner">
+
+						<!-- Slide Heading -->
+						<div class="team-selection__slide-heading justify-content-center justify-content-sm-start"
+							style="z-index: 50;">
+							<h5 class="team-selection__slide-subtitle text-danger mt-5">The Challengue Shoot</h5>
+							<h2 class="team-selection__slide-title text-white">
+								Prison Break
+							</h2>
+						</div>
+						<!-- Slide Heading / End -->
+
+						<!-- Slide Body -->
+						<div class="team-selection__slide-body">
+
+							<!-- Players -->
+							<div class="team-selection__slide-players">
+								<img src="assets/img/maps/prison break.jpg" alt=""
+									class="team-selection__slide-player imagenMap">
+							</div>
+							<!-- Players / End -->
+
+							<div class="ncr-decor-wrapper d-none">
+								<div class="ncr-decor d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+								<div class="ncr-decor ncr-decor--reverse d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3"></div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Slide Body / End -->
+
+					</div>
+				</div>
+				<!-- Slide #2 -->
+
+				<!-- Slide #1 -->
+				<div class="team-selection__slide team-selection__slide--category-1">
+					<div class="team-selection__slide-inner">
+
+						<!-- Slide Heading -->
+						<div class="team-selection__slide-heading justify-content-center justify-content-sm-start"
+							style="z-index: 50;">
+							<h5 class="team-selection__slide-subtitle text-danger mt-5">The Challengue Shoot</h5>
+							<h2 class="team-selection__slide-title">
+								ChinaTown
+							</h2>
+						</div>
+						<!-- Slide Heading / End -->
+
+						<!-- Slide Body -->
+						<div class="team-selection__slide-body">
+
+							<!-- Players -->
+							<div class="team-selection__slide-players">
+								<img src="assets/img/maps/Chinatown.jpg" alt=""
+									class="team-selection__slide-player imagenMap">
+							</div>
+							<!-- Players / End -->
+
+							<div class="ncr-decor-wrapper d-none">
+								<div class="ncr-decor d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+								<div class="ncr-decor ncr-decor--reverse d-none d-sm-block">
+									<div class="ncr-decor__layer-1">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-2">
+										<div class="ncr-decor__layer-bg"></div>
+									</div>
+									<div class="ncr-decor__layer-3"></div>
+									<div class="ncr-decor__layer-4"></div>
+									<div class="ncr-decor__layer-5"></div>
+								</div>
+							</div>
+
+						</div>
+						<!-- Slide Body / End -->
+
+					</div>
+				</div>
+				<!-- Slide #1 -->
+
+
 			</div>
-
-
-
 		</main>
+
 
 		<!-- Overlay -->
 		<div class="site-overlay"></div>
 		<!-- Overlay / End -->
 
-		<!-- Search Panel -->
-		<div class="search-panel d-none">
-			<div class="search-panel__content">
-				<form action="#" id="header-search-form" class="search-form search-form--header">
-					<input type="text" class="form-control" value="" placeholder="Busca en The Challenge Shot">
-				</form>
-				<span>Write what you are looking for, choose the filters and press enter to begin your search!</span>
-			</div>
-		</div>
-		<!-- Search Panel / End -->
+
 		<!-- Menu Panel -->
 		<div class="menu-panel d-lg-none">
 			<ul class="menu-panel__mobile-bar list-unstyled d-lg-none">
-				<li class="mobile-bar-item active">
-					<a class="mobile-bar-item__header active" href="home.html">
+				<li class="mobile-bar-item ">
+					<a class="mobile-bar-item__header" href="home.html">
 						Home
 					</a>
 				</li>
-				<li class="mobile-bar-item">
+				<li class="mobile-bar-item active">
 					<a class="mobile-bar-item__header collapsed" data-toggle="collapse" href="#mobile_collapse_1"
 						role="button" aria-expanded="false" aria-controls="mobile_collapse_1">
 						Game
@@ -414,7 +509,7 @@
 							<ul class="mobile-nav__list">
 								<li class=""><a href="weapons.html">Weapons</a></li>
 								<li class=""><a href="characters.html">Characters</a></li>
-								<li class=""><a href="maps.html">Maps</a></li>
+								<li class="active"><a href="maps.html">Maps</a></li>
 								<li class=""><a href="lastPerson.html">Latest Characters</a></li>
 							</ul>
 						</nav>
@@ -454,15 +549,15 @@
 					<div id="dl-menu" class="dl-menuwrapper">
 						<!-- <button class="dl-trigger">Open Menu</button> -->
 						<ul class="dl-menu dl-menuopen">
-							<li class="active">
+							<li class="">
 								<a href="home.html">Home</a>
 							</li>
-							<li class="">
+							<li class="active">
 								<a href="#">Game</a>
 								<ul class="dl-submenu">
 									<li class=""><a href="weapons.html">Weapons</a></li>
 									<li class=""><a href="characters.html">Characters</a></li>
-									<li class=""><a href="maps.html">Maps</a></li>
+									<li class="active"><a href="maps.html">Maps</a></li>
 									<li class=""><a href="lastPerson.html">Latest Characters</a></li>
 								</ul>
 							</li>
@@ -571,16 +666,6 @@
 
 	</div>
 
-	<!-- <div class="preloader-overlay d-none">
-		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div>
-				<svg role="img" class="">
-					<use xlink:href="assets/img/logo/logoIcon.png" />
-				</svg>
-			</div>
-		</div>
-	</div> -->
 	<div class="preloader-overlay">
 		<div id="js-preloader" class="preloader">
 			<div class="preloader-inner fadeInUp position-relative">

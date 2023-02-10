@@ -438,6 +438,12 @@ h1 .subtitle {
 .mobile-nav li.active > a {
   color: #ca476e !important;
 }
+.team-selection__slide-player {
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  width: 85%;
+  border-radius: 20px;
+}
 
 @media (min-width: 992px) {
   .site-content__inner .page-thumbnail {
@@ -461,6 +467,13 @@ h1 .subtitle {
   .post--single .post__thumbnail {
     width: 33%;
   }
+
+  .team-selection__slide-player {
+    bottom: 50%;
+    transform: translate(-50%, 60%);
+    width: 70%;
+    border-radius: 20px;
+  }
 }
 @media (min-width: 1440px) {
   .site-layout--default .site-content__inner {
@@ -480,6 +493,24 @@ h1 .subtitle {
   .post--single .post__thumbnail {
     width: 33%;
   }
+  .team-selection__slide-player {
+    bottom: 50%;
+    transform: translate(-50%, 60%);
+    width: 60%;
+    border-radius: 20px;
+  }
+  .team-selection__slide .ncr-decor {
+    position: absolute;
+    left: -10rem;
+    bottom: 0;
+  }
+  .team-selection__slide .ncr-decor--reverse {
+    left: auto;
+    right: -10rem;
+  }
+  .ncr-decor {
+    height: 550px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -491,4 +522,55 @@ h1 .subtitle {
     -ms-flex-pack: center;
     justify-content: center;
   }
+}
+
+/* Seccion de mapas */
+.team-selection__slide--category-1 {
+  background: linear-gradient(
+      to right,
+      rgba(24, 23, 36, 0.5),
+      rgba(4, 6, 39, 0.8)
+    ),
+    url("../img/maps/chinato.jpg") center center / cover;
+}
+/* Seccion de mapas */
+.team-selection__slide--category-2 {
+  background: linear-gradient(
+      to right,
+      rgba(24, 23, 36, 0.5),
+      rgba(4, 6, 39, 0.8)
+    ),
+    url("../img/maps/Desert\ market.jpg") center center / cover;
+}
+.team-selection__slide--category-5 {
+  background: linear-gradient(
+      to right,
+      rgba(24, 23, 36, 0.5),
+      rgba(4, 6, 39, 0.8)
+    ),
+    url("../img/maps/Neighborhood.jpg") center center / cover;
+}
+.team-selection__slide--category-6 {
+  background: linear-gradient(
+      to right,
+      rgba(24, 23, 36, 0.5),
+      rgba(4, 6, 39, 0.8)
+    ),
+    url("../img/maps/prison\ break.jpg") center center / cover;
+}
+
+.ncr-decor__layer-1,
+.ncr-decor__layer-2 {
+  background-image: linear-gradient(#1e162d, #b10035);
+}
+.ncr-decor__layer-3 {
+  background-image: linear-gradient(to bottom, #b10035, #fff);
+}
+.ncr-decor__layer-3::before {
+  background-color: rgba(30, 22, 45, 0.5);
+}
+.ncr-decor__layer-3::after,
+.ncr-decor__layer-4,
+.ncr-decor__layer-5 {
+  background-color: #d4013673;
 }
