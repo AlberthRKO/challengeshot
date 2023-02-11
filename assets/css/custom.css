@@ -131,7 +131,12 @@ h1 .subtitle {
 /* #382323 */
 
 .video-full-bg {
-  background-color: #01051ecc;
+  background: linear-gradient(
+      to right,
+      rgba(10, 8, 39, 0.816),
+      rgba(4, 6, 39, 0.8)
+    ),
+    url(../img/manchas.png) center center;
 }
 
 /* Arreglo de blog */
@@ -445,6 +450,25 @@ h1 .subtitle {
   border-radius: 20px;
 }
 
+.player-info-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "imperial", sans-serif;
+}
+
+.header-pagination {
+  position: absolute;
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  /* top: 50%; */
+  right: 50%;
+  bottom: 0;
+  transform: translateX(50%);
+  z-index: 100;
+}
+
 @media (min-width: 992px) {
   .site-content__inner .page-thumbnail {
     position: fixed;
@@ -473,6 +497,27 @@ h1 .subtitle {
     transform: translate(-50%, 60%);
     width: 70%;
     border-radius: 20px;
+  }
+  .player-info-title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: "imperial", sans-serif;
+  }
+  .header-pagination {
+    position: absolute;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 100;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .player-info-title.h1 {
+    font-size: 3.125rem;
   }
 }
 @media (min-width: 1440px) {
@@ -510,6 +555,22 @@ h1 .subtitle {
   }
   .ncr-decor {
     height: 550px;
+  }
+  .player-info-title {
+    font-size: 4rem;
+    font-weight: normal;
+    font-family: "imperial", sans-serif;
+  }
+  .header-pagination {
+    position: absolute;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 100;
   }
 }
 
@@ -573,4 +634,18 @@ h1 .subtitle {
 .ncr-decor__layer-4,
 .ncr-decor__layer-5 {
   background-color: #d4013673;
+}
+
+.header-pagination .header-scroll-arrow {
+  transition: all 0.3s ease;
+  border: solid 1px white;
+  border-radius: 5px;
+}
+.header-pagination .header-scroll-arrow:hover {
+  border: solid 1px white;
+  border-radius: 5px;
+}
+.header-scroll-arrow:hover svg {
+  transform: rotate(360deg);
+  fill: white;
 }
