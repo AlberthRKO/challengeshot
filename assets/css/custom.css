@@ -136,7 +136,7 @@ h1 .subtitle {
       rgba(10, 8, 39, 0.816),
       rgba(4, 6, 39, 0.8)
     ),
-    url(../img/manchas.png) center center;
+    url(../img/manchas2.png) center center;
 }
 
 /* Arreglo de blog */
@@ -205,7 +205,7 @@ h1 .subtitle {
 } */
 
 .header-menu-toggle {
-  background-color: #fc0e2f;
+  background-color: #3a0efc;
 }
 .header-menu-toggle__inner span {
   background: white;
@@ -397,7 +397,7 @@ h1 .subtitle {
   background-image: linear-gradient(#1e162d, #b10035);
 }
 .ncr-page-decor__layer-3 {
-  background-image: linear-gradient(to bottom, #b10035, #fff);
+  background-image: linear-gradient(to bottom, #b10035, #1e162d);
 }
 .ncr-page-decor__layer-3::before {
   background-color: rgba(30, 22, 45, 0.5);
@@ -468,7 +468,14 @@ h1 .subtitle {
   transform: translateX(50%);
   z-index: 100;
 }
-
+@media (min-width: 576px) {
+  .team-selection__slide-player {
+    bottom: 40%;
+    transform: translate(-50%, 50%);
+    width: 85%;
+    border-radius: 20px;
+  }
+}
 @media (min-width: 992px) {
   .site-content__inner .page-thumbnail {
     position: fixed;
@@ -512,6 +519,17 @@ h1 .subtitle {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    z-index: 100;
+  }
+  .header-pagination.maps {
+    position: absolute;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -35%);
     z-index: 100;
   }
 }
@@ -570,6 +588,17 @@ h1 .subtitle {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    z-index: 100;
+  }
+  .header-pagination.maps {
+    position: absolute;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -35%);
     z-index: 100;
   }
 }
@@ -648,4 +677,8 @@ h1 .subtitle {
 .header-scroll-arrow:hover svg {
   transform: rotate(360deg);
   fill: white;
+}
+
+.site-header--landing .main-nav__list > li > a {
+  font-size: 1rem;
 }

@@ -1032,16 +1032,16 @@
           var stylesOutput = "";
 
           // Skins
-          if (mapStyle === "necromancers") {
+          if (mapStyle === "thechallengeshoot") {
             // Skin: Necromancers
             stylesOutput = [
               {
                 elementType: "labels.text.fill",
-                stylers: [{ color: "#ffffff" }],
+                stylers: [{ visibility: "off" }],
               },
               {
                 elementType: "labels.text.stroke",
-                stylers: [{ color: "#222430" }],
+                stylers: [{ color: "#444444" }],
               },
               {
                 featureType: "administrative.land_parcel",
@@ -1051,12 +1051,12 @@
               {
                 featureType: "landscape",
                 elementType: "geometry",
-                stylers: [{ color: "#222430" }],
+                stylers: [{ color: "#F6F9FF" }],
               },
               {
                 featureType: "poi",
                 elementType: "geometry.fill",
-                stylers: [{ color: "#5e627e" }],
+                stylers: [{ color: "#F6F9FF" }],
               },
               {
                 featureType: "poi",
@@ -1078,7 +1078,7 @@
               {
                 featureType: "road",
                 elementType: "geometry",
-                stylers: [{ color: "#323545" }],
+                stylers: [{ color: "#ffffff" }],
               },
               {
                 featureType: "road",
@@ -1109,7 +1109,7 @@
               {
                 featureType: "water",
                 elementType: "geometry.fill",
-                stylers: [{ color: "#4545fa" }],
+                stylers: [{ color: "#5cf2fb" }],
               },
             ];
           } else if (mapStyle === "ultra-light") {
