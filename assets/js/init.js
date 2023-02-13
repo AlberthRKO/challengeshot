@@ -1049,9 +1049,10 @@
                 stylers: [{ visibility: "off" }],
               },
               {
+                // color de las casas
                 featureType: "landscape",
                 elementType: "geometry",
-                stylers: [{ color: "#F6F9FF" }],
+                stylers: [{ color: "#F1F1F1" }],
               },
               {
                 featureType: "poi",
@@ -1073,9 +1074,10 @@
                 featureType: "poi.park",
                 elementType: "geometry.fill",
                 // arreglos de lugares
-                stylers: [{ color: "#af6871" }],
+                stylers: [{ color: "#CEC9CB" }],
               },
               {
+                // las lineas de calles
                 featureType: "road",
                 elementType: "geometry",
                 stylers: [{ color: "#ffffff" }],
@@ -1109,7 +1111,7 @@
               {
                 featureType: "water",
                 elementType: "geometry.fill",
-                stylers: [{ color: "#5cf2fb" }],
+                stylers: [{ color: "#aee0f4" }],
               },
             ];
           } else if (mapStyle === "ultra-light") {
