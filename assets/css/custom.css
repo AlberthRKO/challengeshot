@@ -711,3 +711,37 @@ h1 .subtitle {
     transform: none;
   }
 }
+
+/* arreglos de los filtros de armas */
+
+.armas-filter {
+  margin-bottom: 0;
+  padding: 15px 15px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.armas-filter button {
+  position: relative;
+  width: 180px;
+  height: 75px;
+  outline: 0;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  transition: all 300ms ease;
+  will-change: transform;
+}
+.armas-filter button:hover,
+.armas-filter button.active {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(177, 0, 53, 0.6)
+  );
+}
